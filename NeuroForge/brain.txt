@@ -1,0 +1,2182 @@
+================================================================================
+         THE HUMAN BRAIN — COMPLETE DOCUMENTATION
+         Structure · Function · Capability · Digitalization
+================================================================================
+         Author: Generated Reference Document
+         Version: 1.0
+         Scope: Neuroscience + Cognitive Science + AI Brain Emulation
+================================================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TABLE OF CONTENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  PART I  — WHAT THE BRAIN IS
+    01. Overview & Basic Facts
+    02. Evolutionary History
+    03. Physical Composition
+    04. Cellular Architecture
+    05. Brain Regions & Their Functions
+    06. The Lobes
+    07. Subcortical Structures
+    08. The Brainstem
+    09. The Cerebellum
+    10. The Limbic System
+    11. The Connectome — Wiring of the Brain
+
+  PART II — HOW THE BRAIN WORKS
+    12. Neurons & Synapses
+    13. Electrochemical Signaling
+    14. Neurotransmitters & Neuromodulators
+    15. Neural Oscillations & Brainwaves
+    16. Neuroplasticity
+    17. Memory Systems
+    18. Attention & Consciousness
+    19. Emotion & Motivation
+    20. Language & Communication
+    21. Perception (Vision, Hearing, Touch, Taste, Smell)
+    22. Motor Control
+    23. Sleep & the Brain
+    24. The Autonomic Nervous System
+
+  PART III — WHAT THE BRAIN CAN DO
+    25. Cognitive Abilities
+    26. Pattern Recognition
+    27. Creativity & Imagination
+    28. Social Cognition & Theory of Mind
+    29. Decision Making & Risk Assessment
+    30. Learning Paradigms
+    31. Abstract Reasoning & Mathematics
+    32. Limits of the Human Brain
+    33. The Brain Under Stress, Fear, and Trauma
+    34. Altered States of Consciousness
+    35. Brain Disorders & What They Reveal
+
+  PART IV — HOW TO DIGITALIZE THE BRAIN AS AN AI
+    36. The Philosophy of Mind — Can a Brain Be Copied?
+    37. Whole Brain Emulation (WBE) — The Roadmap
+    38. Connectomics — Mapping Every Connection
+    39. Neural Data Acquisition Methods
+    40. Biological Fidelity Levels
+    41. Computational Requirements
+    42. Neural Network Analogies (Biological vs. Artificial)
+    43. Current AI Architectures Inspired by the Brain
+    44. Spiking Neural Networks (SNNs)
+    45. Neuromorphic Hardware
+    46. Memory Systems in AI vs. in Biology
+    47. Emulating Consciousness — The Hard Problem
+    48. Existing Projects & Research Initiatives
+    49. Ethical & Philosophical Implications
+    50. A Practical Blueprint — Step-by-Step Brain Digitalization Pipeline
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART I — WHAT THE BRAIN IS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────────────────────────
+01. OVERVIEW & BASIC FACTS
+────────────────────────────────────────────────────────────────────────────────
+
+The human brain is the most complex known object in the universe — a roughly
+1.4-kilogram mass of electrochemical machinery that generates every thought,
+emotion, perception, memory, and voluntary action a human being ever has.
+
+QUICK STATS:
+  Weight               ~1,300 – 1,400 grams (average adult)
+  Volume               ~1,130 cm³ (female avg) / ~1,260 cm³ (male avg)
+  Neurons              ~86 billion (±8 billion)
+  Non-neuronal cells   ~85 billion (glial, endothelial, etc.)
+  Synapses             ~100–500 TRILLION (estimates vary; ~150T is commonly cited)
+  Cortical surface     ~2,500 cm² (if unfolded; ~2.5 sq ft)
+  Cortical thickness   ~2–4 mm
+  White matter length  ~170,000 km of axon fibers (if stretched end to end)
+  Power consumption    ~20 watts (the brain uses 20% of body's energy, ~20W)
+  Processing speed     ~120 m/s (fastest nerve impulses)
+  Metabolic demand     Glucose is primary fuel; ~5.6 mg glucose/100g brain/min
+  Operating temp       ~38.5°C (slightly warmer than body core)
+  Age at peak          Prefrontal cortex fully matures at ~25 years
+  Lifespan             Neurons can survive 100+ years; brain ages over lifetime
+
+The brain is housed inside the skull (cranium) and is cushioned by three
+membranes called meninges: dura mater, arachnoid mater, and pia mater.
+Cerebrospinal fluid (CSF) circulates between these layers, acting as a hydraulic
+shock absorber and metabolic clearance system. The blood-brain barrier (BBB),
+formed by tight junctions in cerebrovascular endothelial cells, selectively
+controls what enters the brain from the bloodstream — keeping out pathogens and
+most large molecules while allowing glucose, oxygen, and small lipophilic
+molecules through.
+
+────────────────────────────────────────────────────────────────────────────────
+02. EVOLUTIONARY HISTORY
+────────────────────────────────────────────────────────────────────────────────
+
+The brain did not spring into existence fully formed. It is the product of
+~500 million years of iterative evolutionary engineering.
+
+  ~540 MYA   Primitive nervous systems in early bilaterians (nerve nets)
+  ~500 MYA   First centralized ganglia in ancient fish ancestors
+  ~420 MYA   Hindbrain / brainstem structures emerge (survival, reflexes)
+  ~350 MYA   Limbic precursors in reptilian ancestors (emotion, memory)
+  ~200 MYA   Early mammalian neocortex begins to form
+  ~65 MYA    Primate brain expansion begins (visual cortex enlargement)
+  ~6-7 MYA   Hominid lineage diverges from chimpanzees; brain ~350cc
+  ~3 MYA     Homo habilis; brain ~600cc; tool use begins
+  ~2 MYA     Homo erectus; brain ~900cc; fire, social coordination
+  ~300 KYA   Homo sapiens; brain ~1,350cc; language, abstract thought
+  ~70 KYA    Cognitive revolution — symbolic thought, art, complex language
+
+MacLean's "Triune Brain" model (now considered oversimplified but pedagogically
+useful) divides the brain into:
+  - Reptilian complex (brainstem + basal ganglia): survival instincts
+  - Paleomammalian complex (limbic system): emotions, memory
+  - Neomammalian complex (neocortex): reasoning, language, planning
+
+Modern neuroscience rejects strict triune modularity but the evolutionary
+layering is real — older brain structures are preserved and co-opted.
+
+────────────────────────────────────────────────────────────────────────────────
+03. PHYSICAL COMPOSITION
+────────────────────────────────────────────────────────────────────────────────
+
+BY WEIGHT:
+  Water              ~73–78%
+  Lipids (fats)      ~11% (highest fat content of any organ; myelin is mostly fat)
+  Proteins           ~8%
+  Carbohydrates      ~1%
+  Inorganic salts    ~1%
+  Other              trace minerals, RNA, DNA
+
+STRUCTURAL DIVISIONS:
+  Cerebrum           Largest part; two hemispheres; seat of higher cognition
+  Cerebellum         Posterior; balance, motor coordination, procedural learning
+  Brainstem          Midbrain + pons + medulla; vital autonomic functions
+  Diencephalon       Thalamus + hypothalamus; sensory relay, homeostasis
+  Limbic System      Hippocampus, amygdala, cingulate, etc.; emotion & memory
+
+GRAY MATTER vs. WHITE MATTER:
+  Gray matter  → Cell bodies, dendrites, unmyelinated axons, synapses
+                 Location: cortex (outer layer), subcortical nuclei
+                 Function: information processing, computation
+  White matter → Myelinated axon tracts (highways between regions)
+                 Location: beneath cortex, corpus callosum, brainstem
+                  Function: signal transmission, connectivity
+
+                  (See Section 04 for cellular details.)
+
+────────────────────────────────────────────────────────────────────────────────
+04. CELLULAR ARCHITECTURE
+────────────────────────────────────────────────────────────────────────────────
+
+THE NEURON (nerve cell) — the fundamental computational unit:
+
+  Structure:
+  ┌─────────────────────────────────────────────────────────────┐
+  │  DENDRITES ──► CELL BODY (soma) ──► AXON ──► AXON TERMINAL │
+  │      ↑                                            ↓         │
+  │  Receive signals                          Release signals   │
+  └─────────────────────────────────────────────────────────────┘
+
+  Components:
+  - Dendrites: branching input receivers; one neuron may have thousands
+  - Soma (cell body): contains nucleus, DNA, protein synthesis machinery
+  - Axon hillock: decision point — fires or doesn't fire (all-or-nothing)
+  - Axon: single long output cable; ranges from 0.1mm to 1+ meter (spinal)
+  - Myelin sheath: fatty insulation around axon; speeds signal ~100x
+  - Nodes of Ranvier: gaps in myelin where signal regenerates (saltatory)
+  - Axon terminals (boutons): release neurotransmitters into synaptic cleft
+  - Synaptic vesicles: membrane sacs containing neurotransmitter molecules
+
+TYPES OF NEURONS:
+  Sensory (afferent)   → Carry signals FROM body TO brain
+  Motor (efferent)     → Carry signals FROM brain TO muscles/glands
+  Interneurons         → Connect neurons within CNS (~99% of all neurons)
+
+  Morphological types:
+  - Pyramidal neurons (cortex: excitatory, glutamatergic)
+  - Purkinje cells (cerebellum: massive dendritic trees, inhibitory)
+  - Granule cells (smallest; most numerous; cerebellum & olfactory bulb)
+  - Bipolar neurons (sensory organs)
+  - Mirror neurons (action-observation; motor cortex, Broca's area)
+  - Von Economo neurons (empathy, social awareness; frontoinsular cortex)
+
+GLIAL CELLS (~85 billion) — not just "support" cells:
+  Astrocytes      Regulate synapses, BBB maintenance, metabolic support,
+                  neurotransmitter recycling, synchronize neural activity
+  Oligodendrocytes Form myelin in CNS (one cell myelinates ~50 axons)
+  Schwann cells   Form myelin in PNS (one cell per axon segment)
+  Microglia       Immune cells of the brain; prune excess synapses,
+                  phagocytose debris, respond to injury
+  Ependymal cells Line ventricles; produce and circulate CSF
+  Radial glia     Guide neuron migration during development
+
+────────────────────────────────────────────────────────────────────────────────
+05. BRAIN REGIONS & THEIR FUNCTIONS
+────────────────────────────────────────────────────────────────────────────────
+
+The brain is divided into regions with specialized (but heavily interconnected)
+functions. The mapping below is a high-level functional atlas.
+
+CEREBRAL CORTEX — The 6-layered outer mantle of the brain:
+
+  Layer I   (Molecular layer)    — Mostly dendrites and axons; few cells
+  Layer II  (External granular)  — Small pyramidal and stellate cells
+  Layer III (External pyramidal) — Medium pyramidal cells; cortico-cortical
+  Layer IV  (Internal granular)  — Receives thalamic sensory input
+  Layer V   (Internal pyramidal) — Large Betz cells; output to spinal cord
+  Layer VI  (Multiform layer)    — Projects back to thalamus
+
+Cortical organization:
+  - Brodmann Areas: 52 cytoarchitecturally distinct regions (Korbinian
+    Brodmann, 1909) — still used as anatomical reference
+  - Functional columns: vertical units ~0.5mm wide; basic processing modules
+
+────────────────────────────────────────────────────────────────────────────────
+06. THE LOBES
+────────────────────────────────────────────────────────────────────────────────
+
+FRONTAL LOBE (anterior; ~33% of cortical volume):
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Prefrontal Cortex (PFC):                                     │
+  │  - Executive function: planning, decision-making, inhibition │
+  │  - Working memory (dorsolateral PFC, dlPFC)                  │
+  │  - Personality and social behavior (orbitofrontal, vmPFC)    │
+  │  - Reward valuation (ventromedial PFC)                       │
+  │  - Goal-directed behavior                                    │
+  │  - Moral reasoning and future thinking                       │
+  │                                                              │
+  │ Primary Motor Cortex (M1, Brodmann 4):                       │
+  │  - Voluntary movement control                                │
+  │  - Contralateral body representation (motor homunculus)      │
+  │                                                              │
+  │ Premotor Cortex (Brodmann 6):                                │
+  │  - Motor planning; learned movement sequences               │
+  │                                                              │
+  │ Broca's Area (Brodmann 44/45, left hemisphere):              │
+  │  - Speech production                                         │
+  │  - Syntax processing                                         │
+  │  - Involved in sign language and action understanding        │
+  └──────────────────────────────────────────────────────────────┘
+
+PARIETAL LOBE (superior posterior):
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Primary Somatosensory Cortex (S1, Brodmann 1/2/3):           │
+  │  - Touch, pressure, temperature, pain, proprioception        │
+  │  - Body map: sensory homunculus                              │
+  │                                                              │
+  │ Superior Parietal Lobule:                                    │
+  │  - Spatial awareness, visuomotor integration                 │
+  │  - Body schema maintenance                                   │
+  │                                                              │
+  │ Inferior Parietal Lobule (Angular + Supramarginal gyri):     │
+  │  - Reading, writing, arithmetic                              │
+  │  - Attention, multisensory integration                       │
+  │  - Gerstmann syndrome when damaged (dysgraphia, dyscalculia) │
+  │                                                              │
+  │ Posterior Parietal Cortex:                                   │
+  │  - Spatial navigation, reaching and grasping                 │
+  │  - "Where" visual pathway destination                        │
+  └──────────────────────────────────────────────────────────────┘
+
+TEMPORAL LOBE (lateral; bilateral):
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Primary Auditory Cortex (A1, Brodmann 41/42):                │
+  │  - Frequency, loudness, sound localization                   │
+  │                                                              │
+  │ Wernicke's Area (Brodmann 22, left hemisphere):              │
+  │  - Language comprehension                                    │
+  │  - Semantic processing of speech                             │
+  │                                                              │
+  │ Fusiform Face Area (FFA):                                    │
+  │  - Face recognition (critical; damage = prosopagnosia)       │
+  │                                                              │
+  │ Inferior Temporal Gyrus:                                     │
+  │  - Object recognition; visual category representation        │
+  │                                                              │
+  │ Parahippocampal Gyrus:                                       │
+  │  - Scene recognition; spatial context encoding              │
+  │                                                              │
+  │ Medial Temporal Lobe (hippocampus + surrounding cortex):     │
+  │  - Episodic memory encoding and retrieval                    │
+  │  - Spatial memory and navigation                             │
+  └──────────────────────────────────────────────────────────────┘
+
+OCCIPITAL LOBE (posterior):
+  ┌──────────────────────────────────────────────────────────────┐
+  │ Primary Visual Cortex (V1, Brodmann 17):                     │
+  │  - Edges, orientation, contrast, basic spatial frequencies   │
+  │  - Retinotopic map of visual field                           │
+  │                                                              │
+  │ V2, V3, V4, V5 (MT):                                        │
+  │  - V4: color processing                                      │
+  │  - V5/MT: motion perception                                  │
+  │                                                              │
+  │ Two Visual Pathways:                                         │
+  │  Ventral ("What") → V1→V4→IT: object identity, face/object  │
+  │  Dorsal  ("Where") → V1→MT→PP: spatial location, movement   │
+  └──────────────────────────────────────────────────────────────┘
+
+INSULAR CORTEX (hidden; within lateral sulcus):
+  - Interoception (internal body state awareness)
+  - Pain processing
+  - Disgust response
+  - Self-awareness
+  - Addiction (particularly anterior insula)
+  - Empathy and compassion
+
+────────────────────────────────────────────────────────────────────────────────
+07. SUBCORTICAL STRUCTURES
+────────────────────────────────────────────────────────────────────────────────
+
+THALAMUS:
+  - Gateway / relay station for almost all sensory inputs to cortex
+  - Exceptions: olfaction (goes directly to cortex)
+  - Nuclei: ~50+ distinct nuclei with specific projection targets
+  - Role in consciousness: thalamocortical loops are critical
+  - Mediodorsal nucleus → prefrontal (cognition)
+  - Pulvinar → parietal/temporal/occipital (attention, visual integration)
+  - Lateral geniculate nucleus (LGN) → V1 (vision)
+  - Medial geniculate nucleus (MGN) → A1 (hearing)
+
+HYPOTHALAMUS:
+  - Master regulator of homeostasis
+  - Controls: hunger, thirst, temperature, sleep-wake, circadian rhythm
+  - Controls pituitary gland → hormonal regulation of whole body
+  - Nuclei: suprachiasmatic (circadian), arcuate (appetite), paraventricular,
+    lateral (hunger), ventromedial (satiety), preoptic (thermoregulation)
+  - Releases: CRH, GnRH, TRH, GHRH, somatostatin, oxytocin, vasopressin
+
+BASAL GANGLIA (striatum + globus pallidus + subthalamic + substantia nigra):
+  - Action selection: which behaviors to execute or suppress
+  - Habit formation and procedural learning
+  - Reward-based learning (dopamine from substantia nigra pars compacta)
+  - Direct pathway: facilitates movement
+  - Indirect pathway: suppresses competing movements
+  - Dysfunction: Parkinson's (dopamine loss), Huntington's (striatum),
+                  OCD, addiction, Tourette syndrome
+
+AMYGDALA:
+  - Emotional processing hub (especially fear and threat detection)
+  - Modulates memory consolidation (emotional events remembered better)
+  - Social threat detection; eye contact; face emotional expressions
+  - Basolateral amygdala (BLA): fear learning, associative
+  - Central amygdala: fear expression, autonomic output
+  - Basal amygdala: reward, motivation
+
+HIPPOCAMPUS:
+  - Critical for declarative (explicit) memory encoding
+  - Spatial navigation (place cells, grid cells)
+  - Pattern separation and completion
+  - CA1, CA3, DG (dentate gyrus) subfields — distinct computations
+  - One of few brain areas with adult neurogenesis (still debated)
+  - HM (Henry Molaison): bilateral hippocampectomy → anterograde amnesia;
+    proved hippocampus essential for long-term memory formation
+
+NUCLEUS ACCUMBENS (NAc):
+  - Core of the brain's reward circuit
+  - Dopamine flood here = pleasure/reward signal
+  - Involved in: pleasure, reinforcement learning, addiction, motivation
+  - Gateway between limbic emotion and motor action ("wanting" system)
+
+────────────────────────────────────────────────────────────────────────────────
+08. THE BRAINSTEM
+────────────────────────────────────────────────────────────────────────────────
+
+The brainstem (midbrain + pons + medulla oblongata) is the most ancient and
+life-critical part of the brain. Brain death = brainstem death.
+
+MIDBRAIN (mesencephalon):
+  Superior colliculus    → Visual reflexes, eye movements, gaze control
+  Inferior colliculus    → Auditory reflexes, sound localization
+  Periaqueductal gray    → Pain modulation, fear, defensive behavior
+  Substantia nigra       → Dopamine production; motor control
+  Red nucleus            → Motor coordination (with cerebellum)
+  Reticular formation    → Arousal, consciousness, sleep-wake
+
+PONS:
+  - Relay between cerebellum and cortex
+  - Cranial nuclei: V (trigeminal), VI (abducens), VII (facial), VIII (vestibulocochlear)
+  - Respiratory rhythm control (pontine respiratory group)
+  - REM sleep generation (locus coeruleus, raphe nuclei)
+  - Locus coeruleus: norepinephrine; alertness, stress response
+  - Raphe nuclei: serotonin; mood, arousal, pain
+
+MEDULLA OBLONGATA:
+  - Most vital brainstem structure; damage = instant death
+  - Cardiovascular control center (heart rate, blood pressure)
+  - Respiratory center (breathing rhythm)
+  - Vomiting, swallowing, coughing, sneezing centers
+  - Cranial nuclei: IX (glossopharyngeal), X (vagus), XI, XII
+  - Pyramidal decussation: motor pathways cross here (left brain → right body)
+
+────────────────────────────────────────────────────────────────────────────────
+09. THE CEREBELLUM
+────────────────────────────────────────────────────────────────────────────────
+
+The cerebellum ("little brain") contains MORE neurons than the rest of the
+brain combined (~69 billion, mostly granule cells).
+
+STRUCTURE:
+  - Two hemispheres + central vermis
+  - Outer cerebellar cortex (gray matter)
+  - Deep cerebellar nuclei (dentate, interpositus, fastigial)
+
+FUNCTION:
+  - Motor coordination: smoothing and timing of voluntary movements
+  - Balance and posture
+  - Procedural learning (learning to ride a bike)
+  - Timing and rhythm
+  - Predictive modeling: internal forward models of movement
+  - Increasingly recognized: role in cognition, language, emotion
+
+COMPUTATIONAL PRINCIPLE:
+  - Receives "corollary discharge" copies of motor commands
+  - Compares predicted vs. actual sensory feedback
+  - Corrects errors in real-time and updates internal models
+  - Classic supervised learning in biology
+
+────────────────────────────────────────────────────────────────────────────────
+10. THE LIMBIC SYSTEM
+────────────────────────────────────────────────────────────────────────────────
+
+The limbic system is a set of interconnected structures mediating emotion,
+memory, motivation, and survival behavior. Key players:
+
+  Hippocampus         → Memory encoding (episodic/spatial)
+  Amygdala            → Emotional tagging, fear, threat detection
+  Hypothalamus        → Homeostasis, drives (hunger, sex, aggression)
+  Cingulate Cortex:
+    Anterior (ACC)    → Error detection, conflict monitoring, pain affect
+    Posterior (PCC)   → Self-referential thought, mind-wandering (DMN hub)
+  Entorhinal Cortex   → Memory consolidation gateway to hippocampus
+  Parahippocampal Ctx → Scene/context memory
+  Fornix              → Major output tract from hippocampus
+  Mammillary Bodies   → Memory (Papez circuit); damaged in Korsakoff syndrome
+  Olfactory Bulb      → Only sense with direct limbic access (emotion-smell link)
+
+PAPEZ CIRCUIT (James Papez, 1937):
+  Hippocampus → Fornix → Mammillary Bodies → Anterior Thalamus →
+  Cingulate Cortex → Entorhinal Cortex → Hippocampus
+
+  This loop is foundational to emotional memory processing.
+  (See Section 17 for memory systems and Section 19 for emotion.)
+
+────────────────────────────────────────────────────────────────────────────────
+11. THE CONNECTOME — WIRING OF THE BRAIN
+────────────────────────────────────────────────────────────────────────────────
+
+The connectome is the complete map of all neural connections in a nervous system.
+
+LEVELS OF CONNECTIVITY:
+  Macro-connectome    → Large-scale white matter tracts (MRI tractography)
+  Meso-connectome     → Connectivity between cortical areas at column level
+  Micro-connectome    → Synapse-by-synapse (electron microscopy)
+
+MAJOR WHITE MATTER TRACTS:
+  Corpus Callosum     → Largest; connects left and right hemispheres
+  Arcuate Fasciculus  → Broca's ↔ Wernicke's; language pathway
+  Uncinate Fasciculus → Frontal ↔ temporal; emotion-memory-behavior
+  Superior Longitudinal Fasciculus → Parietal ↔ frontal; spatial attention
+  Corticospinal Tract → Motor cortex → spinal cord (voluntary movement)
+  Optic Radiations    → LGN → V1 (visual signals)
+  Fornix              → Hippocampus → hypothalamus/thalamus
+
+DEFAULT MODE NETWORK (DMN):
+  - Active during rest, self-referential thought, daydreaming
+  - Nodes: mPFC, PCC, angular gyrus, hippocampus, lateral temporal
+  - Deactivated during focused external tasks
+  - Implicated in episodic memory retrieval, future simulation, theory of mind
+  - Disrupted in Alzheimer's, depression, schizophrenia
+
+MAJOR FUNCTIONAL NETWORKS:
+  Salience Network    → Anterior insula + ACC; detects important stimuli
+  Executive Network   → dlPFC + parietal; goal-directed cognition
+  Sensorimotor        → Motor + somatosensory cortices; movement/touch
+  Visual Network      → Occipital areas; visual processing
+  Auditory Network    → Superior temporal; sound processing
+  Limbic Network      → Amygdala + hippocampus + orbitofrontal; emotion
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART II — HOW THE BRAIN WORKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────────────────────────
+12. NEURONS & SYNAPSES
+────────────────────────────────────────────────────────────────────────────────
+
+HOW A NEURON FIRES:
+
+  Resting potential:
+    - Neuron interior: ~-70 mV relative to outside
+    - Maintained by Na⁺/K⁺-ATPase pump (3 Na⁺ out, 2 K⁺ in per cycle)
+    - K⁺ leaks out; Na⁺ mostly blocked at rest
+    - Chloride (Cl⁻) ions mostly outside
+
+  Graded potentials:
+    - Subthreshold changes in membrane voltage from synaptic input
+    - Excitatory Post-Synaptic Potential (EPSP): depolarization (+)
+    - Inhibitory Post-Synaptic Potential (IPSP): hyperpolarization (-)
+    - Summation: spatial (multiple inputs at once) + temporal (rapid repeated)
+
+  Action potential (spike):
+    1. Threshold reached (~-55 mV): voltage-gated Na⁺ channels open
+    2. Rapid depolarization to ~+40 mV (Na⁺ rushes in)
+    3. Repolarization: Na⁺ channels inactivate, K⁺ channels open
+    4. Hyperpolarization: K⁺ channels slow to close (-90 mV)
+    5. Refractory period: absolute (~1-2ms) then relative
+    6. Returns to resting potential
+
+THE SYNAPSE — the communication junction:
+
+  Types:
+    Chemical synapse  → Most common; neurotransmitter-mediated; 20-40nm cleft
+    Electrical synapse → Gap junctions; ions flow directly; fast; synchrony
+
+  Chemical synapse process:
+    1. Action potential arrives at axon terminal
+    2. Voltage-gated Ca²⁺ channels open; Ca²⁺ enters terminal
+    3. Vesicles dock and fuse with presynaptic membrane (SNARE proteins)
+    4. Neurotransmitters released into synaptic cleft (~5000 molecules/vesicle)
+    5. Neurotransmitters bind to receptors on postsynaptic membrane
+    6. Ion channels open (ionotropic) or G-protein cascade (metabotropic)
+    7. Effect: EPSP or IPSP on postsynaptic neuron
+    8. Termination: reuptake, enzymatic degradation, diffusion
+
+SYNAPTIC PLASTICITY:
+  Long-Term Potentiation (LTP):
+    - Repeated co-activation strengthens synapse
+    - "Neurons that fire together wire together" (Hebb's rule)
+    - NMDA receptor acts as coincidence detector (requires both pre+post active)
+    - Results in: more AMPA receptors inserted, structural spine growth
+    - Molecular basis of learning and memory
+
+  Long-Term Depression (LTD):
+    - Persistent decrease in synaptic strength
+    - Occurs when postsynaptic fires without presynaptic (or low-freq stim)
+    - Important for erasure, selectivity, cerebellum motor learning
+
+────────────────────────────────────────────────────────────────────────────────
+13. ELECTROCHEMICAL SIGNALING
+────────────────────────────────────────────────────────────────────────────────
+
+SIGNAL PROPAGATION:
+  Unmyelinated axon: continuous wave of depolarization; ~0.5-2 m/s
+  Myelinated axon:   saltatory conduction (node to node); ~70-120 m/s
+
+INFORMATION CODING:
+  Rate coding:       Firing rate encodes signal intensity (20-200 Hz typical)
+  Temporal coding:   Precise spike timing encodes information
+  Population coding: Distributed pattern across many neurons encodes meaning
+  Sparse coding:     Small fraction of neurons active at once (energy efficient)
+
+────────────────────────────────────────────────────────────────────────────────
+14. NEUROTRANSMITTERS & NEUROMODULATORS
+────────────────────────────────────────────────────────────────────────────────
+
+MAJOR NEUROTRANSMITTERS:
+
+  Glutamate (GLU):
+    - Primary excitatory NT in CNS (~90% of synapses are glutamatergic)
+    - Receptors: AMPA (fast), NMDA (coincidence detector), kainate, mGluR
+    - Role: learning, memory, sensation, motor control
+
+  GABA (γ-aminobutyric acid):
+    - Primary inhibitory NT in CNS (~20% of neurons are GABAergic)
+    - Receptors: GABA-A (fast Cl⁻ channel), GABA-B (slow; G-protein)
+    - Role: preventing overexcitation, anxiety reduction, sleep
+    - Drugs: benzodiazepines, alcohol, barbiturates → potentiate GABA-A
+
+  Glycine:
+    - Inhibitory; especially in brainstem and spinal cord
+    - Receptor: GlyR (Cl⁻ channel)
+
+NEUROMODULATORS (broadcast systems):
+
+  Dopamine (DA):
+    - Produced: substantia nigra (motor), ventral tegmental area (VTA, reward)
+    - Pathways: nigrostriatal, mesolimbic, mesocortical, tuberoinfundibular
+    - Encodes: reward prediction error (RPE) — not just pleasure
+    - Role: motivation, salience, reinforcement learning, motor control
+    - Deficit: Parkinson's (motor), anhedonia (mood)
+    - Excess: schizophrenia (positive symptoms); hyperkinesia
+
+  Serotonin (5-HT):
+    - Produced: raphe nuclei (brainstem); gut (~90% of body's serotonin)
+    - 14+ receptor subtypes
+    - Role: mood regulation, appetite, sleep, social behavior, nausea
+    - Low serotonin: depression, OCD, aggression
+    - SSRIs block reuptake → more 5-HT in synapse → antidepressant effect
+
+  Norepinephrine (NE):
+    - Produced: locus coeruleus (pons)
+    - Role: arousal, alertness, fight-or-flight, attention, memory
+    - Floods during stress; primes brain for rapid response
+    - Role in PTSD, ADHD; NE reuptake inhibitors = stimulants/antidepressants
+
+  Acetylcholine (ACh):
+    - Produced: basal forebrain (cognitive), brainstem (REM sleep)
+    - Receptors: nicotinic (ionotropic), muscarinic (metabotropic)
+    - Role: learning, attention, REM sleep, muscle activation (NMJ)
+    - Deficit: Alzheimer's disease (basal forebrain degeneration)
+    - Organophosphate poisons: block acetylcholinesterase → paralysis
+
+  Endorphins / Enkephalins / Dynorphins (opioid peptides):
+    - Pain modulation, euphoria, stress response
+    - Bind to µ, δ, κ opioid receptors
+    - "Runner's high" = endorphin + endocannabinoid release
+
+  Endocannabinoids (eCBs):
+    - Retrograde signaling: released from postsynaptic, act on presynaptic
+    - Suppress neurotransmitter release (inhibit inhibition or excitation)
+    - Role: pain, appetite, memory, mood, neuroprotection
+    - CB1 receptors (brain), CB2 receptors (immune + periphery)
+    - THC (cannabis) mimics anandamide at CB1
+
+  Oxytocin:
+    - Produced: hypothalamus (paraventricular nucleus)
+    - Released: pituitary gland into bloodstream + directly into brain
+    - Role: social bonding, trust, maternal behavior, orgasm, childbirth
+    - "Bonding hormone" — increased by touch, eye contact, social warmth
+
+  Vasopressin (ADH):
+    - Hypothalamus → pituitary
+    - Role: water retention, blood pressure, social behavior, aggression
+    - V1a receptor: social memory, partner bonding (monogamy in voles)
+
+────────────────────────────────────────────────────────────────────────────────
+15. NEURAL OSCILLATIONS & BRAINWAVES
+────────────────────────────────────────────────────────────────────────────────
+
+The brain generates rhythmic electrical activity at various frequencies.
+Each frequency band correlates with specific cognitive/behavioral states.
+
+  Delta (δ)    0.5–4 Hz     Deep sleep (NREM stages 3–4); unconsciousness
+  Theta (θ)    4–8 Hz       Drowsiness, meditation, REM, hippocampal memory
+                             encoding, creative insight, spatial navigation
+  Alpha (α)    8–13 Hz      Relaxed wakefulness, eyes closed; inhibition of
+                             task-irrelevant areas; "idling" rhythm
+  Beta (β)     13–30 Hz     Active thinking, problem-solving, alertness,
+                             motor activity; sensorimotor rhythm ~12-15 Hz
+  Gamma (γ)    30–100 Hz    High cognitive processing, feature binding,
+                             conscious perception, working memory, attention
+  High-Gamma   100–200 Hz   Local cortical activity; closely tracks neural
+                             firing; used in BCI decoding
+
+KEY OSCILLATORY PHENOMENA:
+  Phase-locking:    Different brain regions synchronize oscillations
+  Theta-gamma coupling: Theta organizes gamma "packets" → memory encoding
+  Phase precession: Hippocampal place cells fire earlier each theta cycle
+  Neural avalanches: Scale-free cascades; brain at criticality
+  Slow cortical potentials: Sustained shifts in cortical excitability
+
+────────────────────────────────────────────────────────────────────────────────
+16. NEUROPLASTICITY
+────────────────────────────────────────────────────────────────────────────────
+
+Neuroplasticity is the brain's ability to change its structure and function
+in response to experience, learning, or injury.
+
+TYPES:
+  Synaptic plasticity   LTP/LTD; strength changes at existing synapses
+  Structural plasticity Spine growth/retraction; new synapse formation
+  Axonal remodeling     Sprouting, pruning, path changes
+  Myelination changes   Experience alters white matter structure
+  Neurogenesis          New neurons in adult hippocampus (DG) and olfactory
+  Cortical remapping    Deprived cortex colonized by adjacent areas
+
+CRITICAL PERIODS:
+  - Windows of heightened plasticity during development
+  - Visual cortex: 4 months–4 years (ocular dominance columns)
+  - Language: birth–puberty
+  - Closing mechanism: PV interneuron maturation, PNN (perineuronal net) formation
+  - Can be reopened by: ketamine, dark exposure (vision), enriched environment
+
+ADULT PLASTICITY:
+  - Still occurs but slower and less global
+  - Learning London map → hippocampal volume increase (London cab drivers)
+  - Musicians: enlarged auditory, somatosensory, motor cortex
+  - Meditation: increased cortical thickness in insula and PFC
+   - Exercise: promotes BDNF (brain-derived neurotrophic factor) → neurogenesis
+   (See Section 17 for memory and consolidation, Section 11 for connectome.)
+
+────────────────────────────────────────────────────────────────────────────────
+17. MEMORY SYSTEMS
+────────────────────────────────────────────────────────────────────────────────
+
+Memory is not a single thing — it is a collection of distinct systems.
+
+EXPLICIT (DECLARATIVE) MEMORY — conscious recall:
+  Episodic memory:
+    - Personal autobiographical events ("what happened to me")
+    - Hippocampus + prefrontal + temporal
+    - "Mental time travel" — re-experience the past, simulate the future
+
+  Semantic memory:
+    - General world knowledge and facts ("Paris is in France")
+    - Left temporal lobe, neocortex
+    - Survives hippocampal damage better than episodic
+
+IMPLICIT (NON-DECLARATIVE) MEMORY — unconscious:
+  Procedural memory:
+    - Motor skills, habits ("how to ride a bike")
+    - Basal ganglia + cerebellum + motor cortex
+    - Survives hippocampal damage (HM could still learn motor tasks)
+
+  Priming:
+    - Prior exposure facilitates future processing
+    - Widespread cortical (perceptual, conceptual)
+
+  Classical conditioning:
+    - Stimulus-response associations
+    - Amygdala (fear conditioning), cerebellum (eyeblink conditioning)
+
+  Habituation/Sensitization:
+    - Simplest learning forms
+    - Localized to relevant sensory areas
+
+WORKING MEMORY:
+  - Active, online maintenance of information for immediate use
+  - Capacity: ~7±2 "chunks" (Miller, 1956); modern estimate ~4 items
+  - Neural basis: sustained firing in dlPFC, parietal, thalamus
+  - Theta-gamma coupling coordinates WM content
+
+MEMORY CONSOLIDATION:
+  Systems consolidation:
+    - Hippocampus gradually transfers memory traces to neocortex
+    - Sleep (especially slow-wave sleep) is critical for consolidation
+    - Takes days to years; older memories become hippocampus-independent
+
+   Synaptic consolidation:
+     - Protein synthesis required within ~6 hours of learning
+     - Anisomycin blocks protein synthesis → blocks LTM formation
+     - mRNA transport to synapses, CREB transcription factor activation
+
+   CONSOLIDATION TIMELINE:
+     Seconds–Minutes:   Early LTP; post-translational modifications
+     Minutes–Hours:     Late LTP; protein synthesis; synaptic consolidation
+     Days–Weeks:        Systems consolidation begins; hippocampal replay during sleep
+     Months–Years:      Hippocampus-independent neocortical memory (fully consolidated)
+
+   SYNAPTIC TAGGING & CAPTURE (Frey & Morris, 1997):
+     - A synapse that undergoes LTP sets a "synaptic tag" (local molecular mark)
+     - This tag captures plasticity-related proteins (PRPs) synthesized elsewhere
+     - Enables weak inputs arriving near tagged synapses to also be strengthened
+     - Explains how local, input-specific LTP can persist for hours
+     - Key mechanism: protein synthesis in soma + capture at tagged synapses
+
+FORGETTING:
+  - Not just failure — active, adaptive process
+  - Interference (proactive, retroactive)
+  - Trace decay (contested; more likely interference)
+  - Motivated forgetting (suppression)
+  - Schema-based reconstruction errors
+  - Retrieval-induced forgetting (remembering one thing suppresses related)
+  (See Section 23 for sleep's role in consolidation.)
+
+────────────────────────────────────────────────────────────────────────────────
+18. ATTENTION & CONSCIOUSNESS
+────────────────────────────────────────────────────────────────────────────────
+
+ATTENTION:
+  - Selective amplification of relevant neural signals
+  - Suppression of irrelevant signals
+
+  Types:
+    Spatial attention  → Where in space to focus
+    Feature attention  → Which feature (color, motion) to focus on
+    Object attention   → Which object to attend
+    Temporal attention → When to expect a stimulus
+
+  Neural mechanisms:
+    - Top-down (endogenous): frontal/parietal → sensory cortex
+    - Bottom-up (exogenous): salience-driven; amygdala + superior colliculus
+    - Frontoparietal network (FPN): attentional control
+    - Alpha suppression: attended area loses alpha; others maintain alpha
+    - Feature Integration Theory: attention binds features into objects
+    - See Section 47 for emulation of consciousness in AI.
+
+CONSCIOUSNESS:
+  The "Hard Problem" (Chalmers): Why is there subjective experience at all?
+  The "Easy Problems": How does the brain integrate info, report states, control
+  behavior? (These are hard but in principle solvable.)
+
+  Major theories:
+    Global Workspace Theory (Baars / Dehaene):
+      - Consciousness = information broadcast to a "global workspace"
+      - Long-range frontoparietal connections "ignite" → conscious access
+      - Predicts: late cortical processing (300ms+), global synchrony
+
+    Integrated Information Theory (Tononi, IIT):
+      - Consciousness = integrated information (Φ, "phi")
+      - High Φ = high consciousness
+      - Physical substrate doesn't matter — what matters is the causal
+        structure of information integration
+      - Controversial: feedforward networks (like current AI) have Φ≈0
+
+    Predictive Processing (Friston):
+      - Brain as a prediction machine; constantly generating models
+      - Consciousness = failed predictions reaching awareness
+      - Free Energy Principle: brain minimizes surprise (free energy)
+
+    Recurrent Processing Theory (Lamme):
+      - Consciousness requires recurrent (feedback) loops in cortex
+      - Feedforward sweep is not enough; needs recurrence
+
+  Neural correlates of consciousness (NCCs):
+    - P300 ERP component (conscious recognition)
+    - Gamma synchrony (feature binding, conscious percepts)
+    - Late cortical spreading activation (>300ms after stimulus)
+    - Thalamocortical loops (disruption → unconsciousness in anesthesia)
+
+────────────────────────────────────────────────────────────────────────────────
+19. EMOTION & MOTIVATION
+────────────────────────────────────────────────────────────────────────────────
+
+EMOTION — basic structure:
+  Basic emotions (Ekman): Fear, Anger, Disgust, Happiness, Sadness, Surprise
+  These are proposed to be universal across cultures (though debated)
+
+  Two-factor theory (Schachter-Singer):
+    Emotion = physiological arousal + cognitive label
+
+  Somatic marker hypothesis (Damasio):
+    Body states (somatic markers) guide decision-making
+    vmPFC damage → flat affect + catastrophic decisions (Phineas Gage archetype)
+
+MOTIVATION:
+  Intrinsic vs. extrinsic motivation
+  Maslow's hierarchy (rough neural correlates):
+    - Physiological: hypothalamus, brainstem
+    - Safety: amygdala, ACC
+    - Social: nucleus accumbens, oxytocin, insula
+    - Esteem: MPFC, striatum
+    - Self-actualization: PFC, default mode network
+
+  DOPAMINE AND MOTIVATION:
+    - Dopamine ≠ pleasure (debunked)
+    - Dopamine = WANTING (incentive salience; Berridge)
+    - Reward Prediction Error (RPE):
+        Dopamine spike when reward > expected (positive RPE)
+        Dopamine dip when reward < expected (negative RPE)
+        No change when reward = expected
+    - This is the biological implementation of Temporal Difference (TD) learning
+
+────────────────────────────────────────────────────────────────────────────────
+20. LANGUAGE & COMMUNICATION
+────────────────────────────────────────────────────────────────────────────────
+
+Language is the most uniquely human cognitive faculty.
+
+LANGUAGE AREAS:
+  Broca's area (BA 44/45, left IFG):
+    - Speech production, articulation, syntax
+    - Subvocalizes grammar; processes hierarchical sentence structure
+    - Damage → Broca's aphasia: effortful, telegraphic speech, intact comprehension
+
+  Wernicke's area (BA 22, left STG):
+    - Speech comprehension; sound-to-meaning mapping
+    - Damage → Wernicke's aphasia: fluent but meaningless speech ("word salad")
+
+  Arcuate fasciculus:
+    - Connects Broca's and Wernicke's
+    - Damage → Conduction aphasia: poor repetition, spared production/comprehension
+
+  Angular gyrus (BA 39):
+    - Reading, writing, arithmetic; semantic integration
+    - Damage → alexia, agraphia, Gerstmann syndrome
+
+LANGUAGE NETWORKS BEYOND THE CLASSICAL MODEL:
+  - Ventral stream: sound → meaning (anterior temporal lobe)
+  - Dorsal stream: sound → articulation (posterior planum temporale → frontal)
+  - Right hemisphere: prosody, discourse, metaphor, pragmatics
+  - Basal ganglia: fluency, rhythm, automaticity of speech
+  - Cerebellum: timing of speech production
+
+UNIVERSAL GRAMMAR (Chomsky):
+  - All human languages share deep structural rules
+  - Language acquisition device (LAD) is innate
+  - Children acquire grammar without explicit instruction
+  - Evidence: poverty of stimulus argument; universal stages of acquisition
+
+LANGUAGE AND THOUGHT (Sapir-Whorf Hypothesis):
+  - Strong version: language determines thought (discredited)
+  - Weak version: language influences certain thought patterns (supported)
+  - Color perception, spatial cognition, number concepts vary by language
+
+────────────────────────────────────────────────────────────────────────────────
+21. PERCEPTION
+────────────────────────────────────────────────────────────────────────────────
+
+VISION:
+  Retina → LGN (thalamus) → V1 → V2 → Ventral/Dorsal streams
+  - 30% of cortex involved in visual processing
+  - What we "see" is largely a reconstruction/prediction, not raw input
+  - Change blindness, inattentional blindness: vast amounts filtered out
+
+HEARING:
+  Cochlea (frequency → place code) → Auditory nerve → Cochlear nuclei →
+  Superior olive (binaural comparison) → Inferior colliculus →
+  Medial geniculate nucleus → A1 (tonotopic map) → Auditory association
+
+TOUCH & PROPRIOCEPTION:
+  Skin receptors (Meissner, Merkel, Ruffini, Pacinian) → Dorsal horn →
+  Medial lemniscus → Thalamus (VPL) → S1 (somatotopic homunculus)
+  Proprioception: muscle spindles, Golgi tendon organs → cerebellum + cortex
+
+SMELL (OLFACTION):
+  Only sense that bypasses the thalamus:
+  Olfactory epithelium → Olfactory bulb → Piriform cortex / Amygdala
+  Direct limbic access explains powerful emotion-smell memories
+
+TASTE (GUSTATION):
+  5 basic tastes: sweet, salty, sour, bitter, umami
+  Tongue receptors → CN VII, IX, X → Nucleus tractus solitarius →
+  Thalamus (VPM) → Primary gustatory cortex (anterior insula / operculum)
+
+MULTISENSORY INTEGRATION:
+  - Brain constantly merges sensory channels (McGurk effect, rubber hand illusion)
+  - Superior temporal sulcus (STS): major multisensory convergence zone
+  - Temporal binding window: ~100-200ms synchrony = perceived as one event
+
+────────────────────────────────────────────────────────────────────────────────
+22. MOTOR CONTROL
+────────────────────────────────────────────────────────────────────────────────
+
+HIERARCHY OF MOTOR CONTROL:
+
+  Level 3 (Strategic): Prefrontal cortex, posterior parietal cortex
+    - Goal selection, action planning, when/why to move
+
+  Level 2 (Tactical): Motor cortex (M1, PM, SMA), basal ganglia, cerebellum
+    - How to move; sequence selection; error correction
+
+  Level 1 (Execution): Spinal cord, brainstem motor nuclei
+    - Muscle activation patterns; reflexes; central pattern generators
+
+CORTICOSPINAL TRACT:
+  M1 (layer V Betz cells) → Internal capsule → Brainstem → Decussate at
+  medulla pyramids → Lateral CST → Contralateral anterior horn → Motor neurons
+  → Neuromuscular junction → Muscle contraction
+  (See Section 09 for cerebellum's role in motor learning.)
+
+CEREBELLUM'S ROLE:
+  - Receives: motor copy (efference copy) + sensory feedback
+  - Computes: motor error; updates internal forward models
+  - Outputs to: motor cortex via thalamus (VL nucleus)
+  - Lesion: ataxia (uncoordinated movement), dysmetria (misjudging distance)
+
+BASAL GANGLIA'S ROLE:
+  - Select which motor program to run (action selection)
+  - Suppress competing programs
+  - Reinforce successful movements via dopamine
+  - Lesion: Parkinson's (hypokinesia), Huntington's (hyperkinesia)
+
+────────────────────────────────────────────────────────────────────────────────
+23. SLEEP & THE BRAIN
+────────────────────────────────────────────────────────────────────────────────
+
+SLEEP ARCHITECTURE:
+  NREM Stage 1 (N1):  Drowsiness; theta waves; hypnic jerks
+  NREM Stage 2 (N2):  Sleep spindles (12-15Hz bursts); K-complexes; ~50% total
+  NREM Stage 3 (N3):  Slow-wave sleep (SWS); delta waves; deep sleep; restorative
+  REM sleep:          Rapid eye movements; vivid dreams; motor paralysis;
+                      EEG resembles wake; memory consolidation; emotional processing
+
+  Sleep cycle: ~90 minutes; 4-6 cycles/night
+  Early night: more SWS; Later night: more REM
+
+FUNCTIONS OF SLEEP:
+  Memory consolidation:    SWS: fact/spatial memory; REM: procedural/emotional
+  Glymphatic clearance:    CSF flushes metabolic waste (amyloid-β, tau)
+  Synaptic homeostasis:    SHY hypothesis: sleep downscales excess synapses
+  Energy restoration:      ATP replenishment; glycogen stores restored
+  Emotional regulation:    REM deactivates amygdala reactivity
+  Immune function:         Cytokine release; sleep deprivation = immunosuppression
+  (See Section 17 for memory consolidation during sleep.)
+
+────────────────────────────────────────────────────────────────────────────────
+24. THE AUTONOMIC NERVOUS SYSTEM
+────────────────────────────────────────────────────────────────────────────────
+
+SYMPATHETIC (fight-or-flight):
+  - Increases heart rate, dilates pupils, inhibits digestion
+  - Releases adrenaline (epinephrine) from adrenal medulla
+  - Hypothalamus → lateral horn of spinal cord → ganglia → organs
+  - NT: norepinephrine (ganglionic: ACh, post-ganglionic: NE)
+
+PARASYMPATHETIC (rest-and-digest):
+  - Decreases heart rate, stimulates digestion, promotes recovery
+  - Cranial nerves (especially vagus, CN X) + sacral spinal cord
+  - NT: acetylcholine (both ganglionic and post-ganglionic)
+
+VAGUS NERVE (CN X):
+  - Carries 80% afferent (gut→brain) vs 20% efferent fibers
+  - Major gut-brain axis pathway
+  - Vagal tone: high = calm, parasympathetic dominance; low = stress
+  - Vagus nerve stimulation (VNS): treats depression, epilepsy
+  - Polyvagal theory (Porges): three states — safe, fight/flight, shutdown
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART III — WHAT THE BRAIN CAN DO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────────────────────────
+25. COGNITIVE ABILITIES
+────────────────────────────────────────────────────────────────────────────────
+
+The human brain's cognitive repertoire is staggering:
+
+  Intelligence:
+    - General factor g (psychometric); fluid vs. crystallized
+    - Multiple intelligences (Gardner): linguistic, logical-mathematical,
+      spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal,
+      naturalistic, existential
+    - Neural efficiency hypothesis: smarter brains = less activation
+    - Parieto-frontal integration theory (P-FIT): IQ linked to efficient
+      communication between frontal and parietal areas
+
+  Executive Functions (frontal lobe specialization):
+    - Cognitive flexibility (task-switching, updating)
+    - Inhibitory control (suppressing prepotent responses)
+    - Working memory (online manipulation of information)
+    - Planning (future-oriented goal decomposition)
+    - Metacognition (thinking about thinking)
+
+  Reasoning:
+    - Deductive: valid conclusion from premises (syllogisms)
+    - Inductive: generalizing from observations
+    - Abductive: best explanation from evidence
+    - Analogical: mapping structure between domains
+
+  Fluid cognition:
+    - Novel problem solving without learned patterns
+    - Relies heavily on PFC, parietal, ACC
+
+────────────────────────────────────────────────────────────────────────────────
+26. PATTERN RECOGNITION
+────────────────────────────────────────────────────────────────────────────────
+
+The brain is fundamentally a pattern recognition machine.
+
+  Visual:     Object recognition in ~100-150ms (faster than thought)
+  Auditory:   Speech recognition; musical structure detection
+  Temporal:   Sequence detection; rhythm, causality
+  Statistical: Probability tracking; Bayesian inference (implicit)
+  Social:     Face reading; gaze detection; emotional state inference
+  Linguistic: Syntax parsing; metaphor; pragmatics
+
+PREDICTIVE PROCESSING:
+  - Brain generates predictions at every level of the hierarchy
+  - Only prediction ERRORS propagate upward (efficient coding)
+  - Prior beliefs + incoming evidence → posterior (Bayesian update)
+  - Hallucinations = perception driven by priors without sensory grounding
+  - Delusions = failure to update beliefs despite disconfirming evidence
+
+────────────────────────────────────────────────────────────────────────────────
+27. CREATIVITY & IMAGINATION
+────────────────────────────────────────────────────────────────────────────────
+
+Creativity = novel + valuable recombination of existing knowledge
+
+  Neural basis:
+    - Default Mode Network (DMN): spontaneous thought, divergent thinking
+    - Executive Control Network (ECN): evaluation, refinement
+    - Salience Network: switching between DMN and ECN
+    - Creative individuals show higher DMN-ECN cooperation
+
+  Divergent vs. Convergent thinking:
+    Divergent: generating many possible solutions (DMN dominated)
+    Convergent: finding the single correct solution (ECN dominated)
+    Insight: gamma burst in right temporal lobe (~300ms before "aha!")
+
+  Imagination:
+    - Mental simulation using perceptual and motor systems
+    - Imagining an action activates motor cortex
+    - Imagining a visual scene activates V1 (weakly)
+    - Episodic future thinking: hippocampus + PFC + DMN
+    - Same machinery as memory retrieval (constructive nature of memory)
+
+────────────────────────────────────────────────────────────────────────────────
+28. SOCIAL COGNITION & THEORY OF MIND
+────────────────────────────────────────────────────────────────────────────────
+
+SOCIAL BRAIN HYPOTHESIS:
+  - Large human neocortex evolved primarily for social complexity
+  - Dunbar's number (~150): cognitive limit for stable social groups
+  - Mediated by PFC, temporal-parietal junction (TPJ), STS, amygdala
+
+THEORY OF MIND (ToM) / MENTALIZING:
+  - Ability to attribute mental states (beliefs, desires, intentions) to others
+  - Key areas: mPFC, TPJ (bilateral), posterior STS, temporal poles
+  - Absent/impaired in autism spectrum disorder
+  - Level-1 ToM: "I know X" develops ~3-4 years
+  - Level-2 ToM: "I know that you think X" develops ~5-6 years
+  - Higher-order: "She knows that he knows that she knows..." → PFC load
+
+MIRROR NEURONS:
+  - Fire both when performing an action AND when observing it
+  - Found in: premotor cortex (F5 in macaques; human homolog: BA44/45)
+  - Role in imitation, empathy, language, social understanding
+  - Broken mirror hypothesis of autism (disputed; oversimplified)
+
+────────────────────────────────────────────────────────────────────────────────
+29. DECISION MAKING & RISK ASSESSMENT
+────────────────────────────────────────────────────────────────────────────────
+
+DUAL PROCESS THEORY (Kahneman):
+  System 1: Fast, automatic, unconscious, heuristic, emotional
+            (amygdala, basal ganglia, insula, ventral striatum)
+  System 2: Slow, deliberate, conscious, rule-based, effortful
+            (dlPFC, ACC, hippocampus)
+
+VALUATION SYSTEMS:
+  - vmPFC computes subjective value of options
+  - Comparison of value signals drives choice
+  - Time discounting: future rewards devalued (hyperbolic discounting)
+  - Loss aversion: losses hurt ~2x more than equivalent gains feel good
+    Neural: losses trigger amygdala + insula activation; gains → ventral striatum
+
+RISK:
+  - Insula signals risk; anterior insula active for uncertainty
+  - Serotonin modulates risk aversion
+  - Dopamine state affects risk preference (high DA → risk-seeking)
+  - ACC monitors conflict and error; adjusts behavior post-error
+
+────────────────────────────────────────────────────────────────────────────────
+30. LEARNING PARADIGMS
+────────────────────────────────────────────────────────────────────────────────
+
+The brain implements multiple learning algorithms simultaneously:
+
+  Associative learning:    Pavlovian (stimulus-stimulus) + Operant (response-outcome)
+  Supervised learning:     Cerebellum (error signals from climbing fibers)
+  Reinforcement learning:  Dopamine as reward prediction error signal (basal ganglia)
+  Unsupervised learning:   Cortex extracts statistical regularities
+  Hebbian learning:        LTP/LTD at synaptic level (co-activation)
+  Observational learning:  Mirror system; watching others
+  Insight learning:        Sudden reorganization of knowledge (Gestalt)
+  Transfer learning:       Using knowledge from one domain in another
+  Meta-learning:           Learning how to learn faster
+
+────────────────────────────────────────────────────────────────────────────────
+31. ABSTRACT REASONING & MATHEMATICS
+────────────────────────────────────────────────────────────────────────────────
+
+  Number sense (ANS): Approximate Number System exists from birth; bilateral
+    intraparietal sulcus (IPS)
+  Exact arithmetic: Left angular gyrus; language-dependent
+  Higher mathematics: Prefrontal, parietal, temporal; requires abstraction
+  Logic: Left prefrontal cortex; working memory + rule application
+  Spatial reasoning: Right parietal cortex; visuospatial manipulation
+  Formal systems: PFC for rules + hippocampus for composition
+
+  Savant mathematics: Calendar calculation, prime factoring without apparent
+    strategy — suggests parallel unconscious computation pathways
+
+────────────────────────────────────────────────────────────────────────────────
+32. LIMITS OF THE HUMAN BRAIN
+────────────────────────────────────────────────────────────────────────────────
+
+Despite its power, the brain has hard limits:
+
+  Working memory:     ~4 chunks simultaneous; ~20-30 seconds without rehearsal
+  Attentional focus:  One demanding task at a time (multitasking = rapid switching)
+  Processing speed:   ~120 ms minimum for conscious visual perception
+  Pattern matching:   Great with familiar categories; terrible with edge cases
+  Statistical reasoning: Terrible by default (Bayesian = hard; needs training)
+  Cognitive biases:   100+ documented biases (availability, confirmation, etc.)
+  Change blindness:   Enormous changes missed if attention not directed
+  Ego depletion:      Decision quality declines after sustained cognitive effort
+  Sleep deprivation:  24h awake = legal BAC 0.10% equivalent impairment
+  Emotional override: Amygdala hijack — emotions can completely overwhelm reason
+  Information overload: ~120 bits/sec maximum conscious processing bandwidth
+  Forgetting curve:   ~70% forgotten within 24h without reinforcement (Ebbinghaus)
+
+────────────────────────────────────────────────────────────────────────────────
+33. THE BRAIN UNDER STRESS, FEAR, AND TRAUMA
+────────────────────────────────────────────────────────────────────────────────
+
+ACUTE STRESS RESPONSE:
+  Threat detected (amygdala) → Hypothalamus → SAM axis (fast):
+    Sympathetic nervous system + adrenal medulla → adrenaline + noradrenaline
+    → Heart rate ↑, respiration ↑, muscles primed, digestion halted
+
+  Hypothalamus → HPA axis (slow):
+    CRH → pituitary → ACTH → adrenal cortex → cortisol (glucocorticoid)
+    → Mobilizes glucose, suppresses immune/reproductive systems
+    → Modulates hippocampus and amygdala
+
+CHRONIC STRESS:
+  - Prolonged cortisol → hippocampal atrophy (memory impairment)
+  - Amygdala hyperactivation (anxiety, fear generalization)
+  - Prefrontal weakening (reduced inhibition, poor decision-making)
+  - Neurogenesis suppression
+
+TRAUMA & PTSD:
+  - Fear memory encoded so strongly it resists extinction
+  - Hyperactive amygdala; underactive vmPFC (cannot extinguish fear)
+  - Hippocampal fragmentation of trauma memory (flashbacks, intrusions)
+  - Increased norepinephrine sensitivity
+  - Treatment: exposure therapy, EMDR, pharmacology (propranolol), MDMA-assisted
+
+────────────────────────────────────────────────────────────────────────────────
+34. ALTERED STATES OF CONSCIOUSNESS
+────────────────────────────────────────────────────────────────────────────────
+
+  Meditation:      Focused attention → reduced DMN; gamma synchrony; long-term
+                   structural changes (increased cortical thickness)
+  Flow state:      Transient hypofrontality; reduced self-monitoring; optimal
+                   challenge-skill ratio; time distortion
+  Hypnosis:        High suggestibility; ACC activity; altered salience processing
+  Psychedelics:    5-HT2A agonism → entropy increase; DMN dissolution;
+                   hyperconnectivity; mystical experiences; neuroplasticity window
+  Lucid dreaming:  REM + prefrontal (re)activation; DLPFC active; gamma in frontal
+  Anesthesia:      Thalamocortical uncoupling; consciousness requires these loops
+
+────────────────────────────────────────────────────────────────────────────────
+35. BRAIN DISORDERS & WHAT THEY REVEAL
+────────────────────────────────────────────────────────────────────────────────
+
+Disorders are natural experiments — lesions reveal function by subtraction.
+
+  Alzheimer's disease:   Amyloid plaques, tau tangles; hippocampus first
+                         → episodic memory loss first; then semantic, then skills
+
+  Parkinson's disease:   Dopaminergic substantia nigra degeneration
+                         → tremor, rigidity, bradykinesia; later cognitive decline
+
+  Schizophrenia:         Excess dopamine (mesolimbic); PFC hypofunction
+                         → positive symptoms (hallucinations) + negative (flat affect)
+
+  Depression:            Serotonin/NE/dopamine imbalance; hippocampal atrophy;
+                         hyperactive amygdala; subgenual ACC overactivation
+
+  Autism Spectrum:       Connectivity differences; social cognition network;
+                         sensory processing differences; local overconnectivity
+
+  OCD:                   Cortico-striato-thalamo-cortical loop hyperactivity
+                         → intrusive thoughts + compulsive behaviors
+
+  ADHD:                  Dopamine/NE dysregulation in PFC + striatum
+                         → attention, impulsivity, executive function deficits
+
+  Split-brain:           Corpus callosum severed; left/right hemispheres act
+                         independently; reveals modular hemispheric specializations
+
+  Capgras syndrome:      Face recognition OK; emotional response to faces cut off
+                         → familiar people feel like impostors (amygdala disconnection)
+
+  Cotard delusion:       Belief one is dead / doesn't exist; depersonalization extreme
+
+  Foreign Accent Syndrome: Accent change after motor cortex/basal ganglia damage
+  Synesthesia:           Cross-activation between sensory cortices
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART IV — HOW TO DIGITALIZE THE BRAIN AS AN AI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+────────────────────────────────────────────────────────────────────────────────
+36. THE PHILOSOPHY OF MIND — CAN A BRAIN BE COPIED?
+────────────────────────────────────────────────────────────────────────────────
+
+This is where we enter contested territory. Before building, you must understand
+the philosophical landscape.
+
+WHAT WOULD "DIGITIZING A BRAIN" MEAN?
+
+  Option A: Functional Emulation
+    Replicate the input-output BEHAVIOR of the brain in a computer.
+    Does NOT require understanding consciousness. Just get the function right.
+    This is the engineering approach. Most achievable.
+
+  Option B: Substrate-Independent Mind
+    The mind IS the pattern of information processing. If you copy the pattern
+    to a different substrate (silicon), the mind continues to exist.
+    This is the functionalist position.
+
+  Option C: Substrate-Dependent Consciousness
+    Consciousness requires biological tissue (or specific physical processes).
+    Copying to silicon produces a philosophical zombie — behaviorally identical
+    but with no inner experience. Your "copy" wouldn't be you.
+
+  Option D: Uploading as Death
+    Any "copy" is a copy, not a continuation. The original brain would have to
+    be destroyed to avoid two versions. Teleportation paradox applies.
+    (See Section 47 for consciousness emulation challenges.)
+
+KEY POSITIONS:
+  Functionalism:     Mind is substrate-independent information processing
+  Biological naturalism (Searle): Consciousness requires specific biology
+  Panpsychism:       Consciousness is a fundamental property of matter
+  Illusionism:       Consciousness as we conceive it is an illusion
+  Dualism:           Mind and matter are ontologically separate (unfalsifiable)
+  Physicalism:       Everything about mind is ultimately physical
+
+For the engineering goal of brain digitalization, we adopt FUNCTIONALISM:
+if we replicate the computational structure, we replicate the mind.
+
+────────────────────────────────────────────────────────────────────────────────
+37. WHOLE BRAIN EMULATION (WBE) — THE ROADMAP
+────────────────────────────────────────────────────────────────────────────────
+
+Whole Brain Emulation (WBE) is the most ambitious form of brain digitalization.
+The Sandberg-Bostrom (2008) FHI technical report "Whole Brain Emulation: A
+Roadmap" is the canonical reference. Here is the distilled pipeline:
+
+STEP 1: Preservation (or In-Vivo Imaging)
+  Option A (Destructive):
+    Chemical fixation (glutaraldehyde, osmium, etc.) + embedding in resin
+    Physical state preserved; biological activity stopped; then slice + image
+
+  Option B (Non-Destructive — not yet feasible at full resolution):
+    Ultra-high-field MRI (7T, 14T) for macrostructure
+    X-ray phase contrast or synchrotron for finer structure
+    Currently achievable at ~1-5 micron resolution (need ~10-20 nanometer)
+
+STEP 2: Sectioning / Physical Sampling
+  - Brain sliced into ultra-thin sections (30–100 nm for electron microscopy)
+  - Automated Tape-Collecting Ultramicrotome (ATUM) — serial sections
+  - Scale: ~10 million sections for a full human brain (1mm brain / 100nm)
+
+STEP 3: High-Resolution Imaging
+  - 3D Electron Microscopy (EM): most practical for nanoscale synaptic resolution
+  - Serial Section Transmission EM (ssTEM)
+  - Focused Ion Beam Scanning EM (FIB-SEM)
+  - Current scale: ~1mm³ volumes (Harvard/Google Janelia: full fly brain in 2020;
+    ~1mm³ human cortex mapped 2024)
+  - Challenge: petabytes to exabytes of raw image data per brain
+
+STEP 4: Image Processing & Segmentation
+  - Automated segmentation of neurons, axons, dendrites, synapses
+  - Deep learning (U-Net, FFN: Flood-Filling Networks by Google)
+  - Identify cell types, organelles, synaptic vesicle counts, synaptic weights
+  - Error rate: must be <1 per mm of axon to avoid cascading topological errors
+
+STEP 5: Connectome Extraction
+  - Build a graph: nodes = neurons, edges = synapses
+  - Record synapse type (glutamate/GABA), location, estimated strength
+  - Capture gap junctions (electrical synapses)
+  - Includes glial cell connectivity? Highly debated whether necessary
+  (See Section 50 for the full digitalization pipeline.)
+
+────────────────────────────────────────────────────────────────────────────────
+38. CONNECTOMICS — MAPPING EVERY CONNECTION
+────────────────────────────────────────────────────────────────────────────────
+
+Connectomics is the science of producing maps of neural connections in the
+nervous system.
+
+SCALES:
+  Macroscale:   DTI tractography (MRI-based); white matter tracts; regions
+  Mesoscale:    Viral tracing, light-sheet microscopy; inter-area axons
+  Microscale:   EM-based; individual synapses; full wiring diagram
+
+MILESTONES:
+  1986:  C. elegans (nematode) full connectome — 302 neurons, 7,000 synapses
+         (Sydney Brenner, John White) — took 12 years
+  2020:  Full Drosophila (fruit fly) brain — 25,000 neurons, 20M synapses
+         (FlyEM project, Janelia/Google)
+  2021:  1mm³ human cortex — 57,000 cells, 150 million synapses, 1.4 petabytes
+         (Harvard + Google Brain)
+  2024+: Active work toward full mouse brain (~71 million neurons)
+  ~2030-2050 (projection): Full human brain connectome
+
+DATA CHALLENGE:
+  1mm³ human cortex = 1.4 petabytes
+  Full human brain (~1,300,000 mm³) = ~1.8 exabytes at the same density
+  This is an informational challenge on par with global internet archives.
+
+────────────────────────────────────────────────────────────────────────────────
+39. NEURAL DATA ACQUISITION METHODS
+────────────────────────────────────────────────────────────────────────────────
+
+For non-destructive (in-vivo) brain reading — necessary for "uploading" a
+living person's brain — current methods and their limits:
+
+  EEG (Electroencephalography):
+    - Scalp electrodes; measures aggregate cortical oscillations
+    - Temporal resolution: ~1ms (excellent)
+    - Spatial resolution: ~1-2 cm (very poor)
+    - Non-invasive, cheap, portable
+    - Cannot resolve individual neurons
+
+  fMRI (Functional MRI):
+    - Measures BOLD signal (blood-oxygen-level-dependent)
+    - Temporal resolution: ~2-3 seconds (poor — hemodynamics lag)
+    - Spatial resolution: ~1-3mm voxels (moderate)
+    - Expensive, stationary, noisy; indirectly measures neural activity
+    - Cannot read out thought at neuronal level
+
+  MEG (Magnetoencephalography):
+    - Measures magnetic fields from neural currents
+    - Temporal: ~1ms (good); Spatial: ~5mm (moderate)
+    - Expensive; requires shielded room; non-invasive
+
+  ECoG (Electrocorticography):
+    - Electrode grid on cortical surface (requires craniotomy)
+    - Temporal: ~1ms; Spatial: ~1mm
+    - High signal quality; used in BCI (brain-computer interface) research
+
+  Utah Array / Neuropixels:
+    - Penetrating electrode arrays into cortex
+    - Record individual spikes from hundreds to thousands of neurons
+    - Neuropixels: 960 electrodes on 1 shaft; 30,000 neurons/cm²
+    - Invasive; tissue damage; long-term stability issues
+
+  Two-Photon Calcium Imaging:
+    - Fluorescent indicators in neurons; flash when neuron fires (Ca²⁺ influx)
+    - Can image tens of thousands of neurons simultaneously in mouse
+    - Requires transparent window; not feasible in human cortex at depth
+
+  Expansion Microscopy:
+    - Chemically expand tissue ~4x → image with standard light microscope
+    - Can achieve ~70nm resolution without EM
+    - Destructive; combined with connectomics
+
+  X-ray Holography / Synchrotron:
+    - Non-destructive imaging at ~10nm resolution possible in small volumes
+    - Beam time is limited; not scalable to full brain currently
+
+  THE GAP:
+    The fundamental gap between current non-invasive methods (~mm resolution)
+    and required resolution (~10nm for synapses) is a factor of 100,000.
+    This gap is the central technical barrier to non-destructive brain uploading.
+  (See Section 41 for computational requirements of each fidelity level.)
+
+────────────────────────────────────────────────────────────────────────────────
+40. BIOLOGICAL FIDELITY LEVELS
+────────────────────────────────────────────────────────────────────────────────
+
+A key design decision is: how faithful does the emulation need to be?
+
+FIDELITY LEVELS (from Sandberg-Bostrom taxonomy):
+
+  Level 1: Whole Brain Dynamics (coarse)
+    - Capture inter-area connection weights and dynamics
+    - Simulate with rate-coded neural mass models
+    - Achievable with today's structural MRI + diffusion tractography
+    - Fidelity: behavior will diverge rapidly; no individual memories
+
+  Level 2: Mesoscale Column Simulation
+    - Capture connectivity between cortical columns (~50,000 neurons each)
+    - Rate-coded or simplified spiking models per column
+    - Current connectome data + significant modeling assumptions
+    - Fidelity: capture some personality/cognitive traits (weakly)
+
+  Level 3: Individual Neuron + Synapse Simulation
+    - Full list of every neuron and synapse with approximate weights
+    - Simulate with simplified spiking neuron models (LIF, Izhikevich)
+    - Requires micro-connectome (EM-based); ~2030s-2040s projection
+    - Fidelity: preserves much cognitive structure; may miss sub-cellular detail
+
+  Level 4: Full Biophysical Simulation (ion channel level)
+    - Each neuron modeled with full Hodgkin-Huxley ion channel dynamics
+    - Dendritic computation, receptor distributions, glial interactions
+    - Likely needed for true fidelity (active dendrites are computational)
+    - Requires ~100-1000x more compute than Level 3
+    - Fidelity: near-perfect structural replication
+
+  Level 5: Molecular Simulation
+    - Protein folding, receptor dynamics, second-messenger cascades
+    - MD simulation of synaptic transmission
+    - Computationally intractable for full brain currently
+    - ~10^25 operations for 1 second of full molecular brain simulation
+
+PRACTICAL TARGET: Level 3-4 is the goal for meaningful brain digitalization.
+
+────────────────────────────────────────────────────────────────────────────────
+41. COMPUTATIONAL REQUIREMENTS
+────────────────────────────────────────────────────────────────────────────────
+
+NEURONS:     ~86 billion
+SYNAPSES:    ~150 trillion
+SPIKE RATE:  ~10 Hz average (but up to 100 Hz; ~0.1 Hz in many neocortical cells)
+
+OPERATIONS TO SIMULATE:
+
+  Simplified (LIF neurons, no dendritic computation):
+    - ~10^14 synaptic operations per second (100 trillion ops/s)
+    - Modern supercomputers: ~10^18 FLOPS (exaFLOP)
+    - Seems feasible? But: each synaptic event ≠ 1 FLOP in simulation
+    - Realistic cost: ~10^18 – 10^21 ops/sec for real-time simulation
+    - Frontier (2024): ~1.2 exaFLOPs — borderline for highly simplified model
+
+  Realistic (HH ion channel level):
+    - ~10^4 differential equations per neuron × 86 billion neurons
+    - ~10^15 differential equations total
+    - At 1000 timesteps/second → ~10^18 equations solved per second
+    - Wall time vs. real time ratio: ~10^6 – 10^9 (millions of times slower)
+    - Projection: real-time at HH level requires ~10^25 FLOPS
+    - Current best: ~10^18 FLOPS → still 10 million times underpowered
+
+MEMORY REQUIREMENTS:
+    - Connectivity matrix: 150 trillion synapses × 4 bytes = 600 terabytes min
+    - Synaptic state (dynamic): × 10-100 = 6-60 petabytes working memory
+    - Compressed neural codes may reduce by ~100x
+
+ENERGY:
+    - Blue Brain Project simulating 1mm³ (31,000 neurons): ~1 megawatt
+    - Human brain: 20 watts
+    - Current simulation is ~50,000x less energy efficient than biology
+
+PROJECTION TIMELINE:
+    - Law of accelerating returns (Kurzweil) suggests ~2030s-2040s
+    - More conservative estimates: 2050-2100
+    - Neuromorphic hardware may dramatically change these numbers
+
+────────────────────────────────────────────────────────────────────────────────
+42. NEURAL NETWORK ANALOGIES (BIOLOGICAL VS. ARTIFICIAL)
+────────────────────────────────────────────────────────────────────────────────
+
+  ┌───────────────────────────────┬────────────────────────────────────────┐
+  │ BIOLOGICAL                    │ ARTIFICIAL (Deep Learning)             │
+  ├───────────────────────────────┼────────────────────────────────────────┤
+  │ Neuron (soma + axon)          │ Node / artificial neuron               │
+  │ Dendritic computation         │ (mostly ignored; some models exist)    │
+  │ Synapse                       │ Weight (floating point number)         │
+  │ Excitatory synapse            │ Positive weight                        │
+  │ Inhibitory synapse            │ Negative weight                        │
+  │ Action potential (spike)      │ Activation (continuous real number)    │
+  │ Spike rate                    │ Activation magnitude                   │
+  │ Spike timing                  │ (ignored in most ANNs)                 │
+  │ LTP/LTD                       │ Gradient descent / backpropagation     │
+  │ Cortical layers               │ Network layers                         │
+  │ Cortical columns              │ Convolutional filters                  │
+  │ Attention (top-down)          │ Attention mechanism (Transformer)      │
+  │ Working memory (PFC)          │ Context window / hidden state          │
+  │ Episodic memory (hippocampus) │ RAG / external vector database         │
+  │ Semantic memory (neocortex)   │ Model weights (in-context knowledge)   │
+  │ Sleep consolidation           │ Training epochs                        │
+  │ Neuromodulators               │ Learning rate schedulers (rough analog)│
+  │ Pruning (adolescent)          │ Dropout / weight regularization        │
+  │ Cortical hierarchy            │ Deep network hierarchy                 │
+  │ Predictive coding             │ Predictive coding networks (emerging)  │
+  │ Forward model (cerebellum)    │ World models (DreamerV3, etc.)         │
+  │ Reward prediction error (DA)  │ TD-error in RL; PPO; Q-learning        │
+  └───────────────────────────────┴────────────────────────────────────────┘
+
+KEY DIFFERENCES (what AI still lacks):
+   (See Section 43 for AI architectures that approximate these.)
+   1. Sparse, energy-efficient spiking (most ANN = dense, expensive)
+   2. Online learning without catastrophic forgetting
+   3. True temporal sequence processing at millisecond precision
+  4. Grounded sensorimotor embodiment
+  5. Continuous, always-on background processing (no explicit inference calls)
+  6. Intrinsic motivation, homeostatic drives
+  7. Developmental learning from scratch (not pretraining on internet text)
+  8. Physical world causality model
+
+────────────────────────────────────────────────────────────────────────────────
+43. CURRENT AI ARCHITECTURES INSPIRED BY THE BRAIN
+────────────────────────────────────────────────────────────────────────────────
+
+TRANSFORMERS & ATTENTION:
+  - Multi-head attention: loosely inspired by biological attention
+  - Allows dynamic routing of information (cf. thalamic gating)
+  - KV cache: rough analog to short-term memory buffer
+  - Lack: biological attention is sparse; Transformer attention is dense/expensive
+
+CONVOLUTIONAL NEURAL NETWORKS (CNNs):
+  - Directly inspired by Hubel & Wiesel's simple/complex cells in V1
+  - Receptive fields, shared weights, hierarchical feature detection
+  - Deep CNN hierarchy maps onto V1→V2→V4→IT visual hierarchy
+
+RECURRENT NEURAL NETWORKS (RNNs / LSTMs / GRUs):
+  - Temporal processing; sequence learning
+  - Hidden state ≈ short-term memory (compressed context)
+  - LSTM gates (forget, input, output) ≈ modulatory control of memory
+
+HOPFIELD NETWORKS / ASSOCIATIVE MEMORY:
+  - Attractor dynamics (multiple stable states) ≈ memory retrieval
+  - Modern Hopfield networks (Ramsauer 2020): used in Transformer layers
+  - CAM3 (context-addressable memory) ≈ hippocampal pattern completion
+
+GENERATIVE ADVERSARIAL NETWORKS (GANs):
+  - Generator-discriminator: possible analogy to predictive coding
+  - Generator = brain's top-down prediction; discriminator = error signal
+
+VARIATIONAL AUTOENCODERS (VAEs):
+  - Learn latent representations; generate by sampling from latent space
+  - Latent space ≈ compressed world model representation in cortex
+
+WORLD MODELS (Ha & Schmidhuber, Hafner):
+  - Explicit forward model of environment dynamics
+  - Dream in latent space; plan before acting
+  - DreamerV3: learn all with single algorithm; ≈ cerebellar forward model
+
+PREDICTIVE CODING NETWORKS (Rao & Ballard):
+  - Hierarchical predictions; only errors propagate up
+  - Exact mathematical implementation of Friston's predictive processing
+  - Current limitation: hard to scale like backprop-trained networks
+
+FREE ENERGY MINIMIZATION (Friston / Active Inference):
+   - Unified framework: perception + action as minimizing prediction error
+   - Agents take actions to confirm their predictions (not just update)
+   - Being implemented in robotics and AI agents (pymdp library)
+
+COGNITIVE ARCHITECTURES (ACT-R, SOAR):
+   (See Section 44 for spiking neural network implementations.)
+   ACT-R (Anderson, 1993):
+     - Hybrid architecture: symbolic modules + subsymbolic activation dynamics
+     - Modules: visual, manual, declarative, procedural, goal, imaginal
+     - Each module operates in parallel; central production system serializes
+     - Declarative memory chunks: activation-based retrieval (base-level + spreading)
+     - Procedural memory: production rules with utility learning
+     - Sub-symbolic parameters: activation decay, noise, threshold
+     - Biologically inspired by prefrontal + basal ganglia + hippocampal loops
+     - Validated against human reaction times, fMRI activation patterns, error rates
+     - Extended to ACT-R/Φ for cognitive neuroscience predictions
+
+   SOAR (Laird, 1987):
+     - Problem-space based architecture; universal subgoaling
+     - Chunking as learning mechanism (compiles experience into rules)
+     - Used in AI agents, game AI, cognitive modeling
+
+────────────────────────────────────────────────────────────────────────────────
+44. SPIKING NEURAL NETWORKS (SNNs)
+────────────────────────────────────────────────────────────────────────────────
+
+SNNs are the third generation of neural networks — closest to biological reality.
+
+KEY FEATURES:
+  - Neurons communicate via discrete spikes (binary events in time)
+  - Spike timing matters (not just rate)
+  - Sparse activation (only a fraction of neurons fire at any moment)
+  - Natural integration of temporal dynamics
+  - Massive energy efficiency on neuromorphic hardware
+
+NEURON MODELS (in order of biological accuracy vs. efficiency):
+  Integrate-and-Fire (IF):     Simplest; integrate input until threshold → spike
+  Leaky Integrate-and-Fire (LIF): Adds membrane leak; most widely used
+  Adaptive LIF (ALIF):          Adds spike-frequency adaptation
+  Izhikevich (2003):            2 equations; reproduces all known neuron types
+  Hodgkin-Huxley (HH, 1952):   Full ion channel biophysics; most accurate; expensive
+  Multi-Compartment models:     Dendrites explicitly modeled; spatial computation
+
+LEARNING IN SNNs:
+  Spike-timing dependent plasticity (STDP):
+    - If pre fires BEFORE post: strengthen (LTP) (within ~20ms window)
+    - If pre fires AFTER post: weaken (LTD)
+    - Unsupervised; biologically plausible; but limited task performance
+
+  Backpropagation-through-time (BPTT) with surrogate gradients:
+    - Approximate gradient of non-differentiable spike function
+    - Enables powerful supervised training (used in competitive SNNs today)
+
+  Online local learning (e-prop, OSTL):
+    - Biologically plausible; doesn't require storing full time history
+    - Forward-mode differentiation; eligibility traces
+
+CURRENT SNN BENCHMARKS (2024):
+  - Competitive with ANNs on audio tasks (N-MINIST, SHD dataset)
+  - Still behind Transformers on complex language tasks
+  - 10-100x more energy efficient on neuromorphic hardware for suitable tasks
+  - Active research: SpyTorch, snnTorch, BindsNET, Norse (Python frameworks)
+
+────────────────────────────────────────────────────────────────────────────────
+45. NEUROMORPHIC HARDWARE
+────────────────────────────────────────────────────────────────────────────────
+
+Neuromorphic chips implement brain-inspired computation in silicon.
+The goal: achieve the brain's ~20 watts with brain-scale computation.
+
+  Intel Loihi 2 (2021):
+    - 1 million synapses per chip; 128 neuromorphic cores
+    - On-chip STDP learning; real-time event-driven processing
+    - Ultra-low power for pattern recognition, robotics, sensory processing
+
+  IBM TrueNorth (2014):
+    - 1 million neurons; 256 million synapses; 4096 cores
+    - 65mW power; designed for inference only (no on-chip learning)
+
+  SpiNNaker 2 (Manchester):
+    - Massively parallel; simulate large-scale SNN models
+    - Goal: mouse-brain scale simulation in real time
+    - Used for research; not production AI deployment
+
+  BrainScaleS (Heidelberg):
+    - Analog neuromorphic; runs 10,000x faster than real time
+    - Physical emulation using transistors as analog neurons
+    - Useful for fast simulation of brain dynamics
+
+  Mythic AI / Analog ML:
+    - Analog in-memory computation; weights stored as conductances
+    - No data movement between memory and compute (solves Von Neumann bottleneck)
+
+  FUTURE: Memristive crossbars, phase-change memory, photonic neuromorphics
+    could enable molecular-scale synaptic integration
+
+THE VON NEUMANN BOTTLENECK vs. THE BRAIN:
+  Standard CPUs/GPUs: compute and memory are separate → massive energy wasted
+  moving data between them. The brain has NO separation — computation happens
+  AT the synapse. Memristors attempt to replicate this: resistance = weight;
+  current × voltage = multiply-accumulate. One atomic-scale synapse per device.
+
+────────────────────────────────────────────────────────────────────────────────
+46. MEMORY SYSTEMS IN AI VS. IN BIOLOGY
+────────────────────────────────────────────────────────────────────────────────
+
+  ┌───────────────────────┬──────────────────────────────────────────────┐
+  │ BIOLOGICAL            │ AI EQUIVALENT                                │
+  ├───────────────────────┼──────────────────────────────────────────────┤
+  │ Working memory (WM)   │ Context window / KV cache / hidden state     │
+  │ Episodic memory       │ RAG (Retrieval-Augmented Generation)         │
+  │                       │ + vector database (FAISS, ChromaDB, etc.)    │
+  │ Semantic memory       │ Model weights (in-context encoded knowledge) │
+  │ Procedural memory     │ Trained model weights for skill execution    │
+  │ Priming               │ Activation patterns; in-context examples     │
+  │ Consolidation (sleep) │ Fine-tuning epochs; offline training         │
+  │ Forgetting            │ Weight decay; context window cutoff          │
+  │ Pattern completion    │ Associative retrieval; attention             │
+  │ Pattern separation    │ Orthogonal representations; decorrelation    │
+  └───────────────────────┴──────────────────────────────────────────────┘
+
+COMPLEMENTARY LEARNING SYSTEMS (CLS) THEORY:
+  - Hippocampus: fast, specific, one-shot encoding (new episodes)
+  - Neocortex: slow, statistical, abstract generalization
+  - Interplay avoids catastrophic forgetting
+  - AI analog: memory-augmented networks (NTM, DNC, MemoryTransformer)
+  - Replay during sleep: stochastic reactivation of hippocampal traces
+    → cortical integration (generalization)
+  - AI analog: Experience Replay in RL; generative replay (GAN-based)
+
+CONTINUAL LEARNING IN AI (active challenge):
+  - Elastic Weight Consolidation (EWC): protect important weights
+  - Progressive Neural Networks: grow new columns per task
+  - PackNet: binary masking of weights per task
+  - MERLIN / HBP: memory-based architectures inspired by CLS
+
+────────────────────────────────────────────────────────────────────────────────
+47. EMULATING CONSCIOUSNESS — THE HARD PROBLEM
+────────────────────────────────────────────────────────────────────────────────
+
+This section is necessarily speculative — we do not have a scientific theory
+of consciousness sufficient to engineer it. However:
+
+WHAT WE KNOW WE CAN REPLICATE:
+  - Information processing (behavior, cognition, perception)
+  - Memory systems
+  - Attention, arousal, sleep-like dynamics
+  - Emotional valence tagging (reward/punishment signals)
+  - Language and reasoning
+  - Goal-directed behavior
+
+WHAT WE CANNOT (YET) VERIFY OR ENGINEER:
+  - Qualia (subjective "redness" of red; "painfulness" of pain)
+  - Self-model with genuine first-person perspective
+  - Phenomenal unity (binding of diverse experience into one "now")
+
+APPROACHES TO ENGINEERING CONSCIOUS-LIKE SYSTEMS:
+
+  Global Workspace Architecture:
+    - Implement a "blackboard" architecture where multiple specialist modules
+      compete to broadcast to a global workspace
+    - Baars/Dehaene → leads to unified, attention-limited information access
+    - Franklin's LIDA (Learning Intelligent Distribution Agent) does this
+    - Does NOT guarantee qualia — only functional consciousness
+
+  Integrated Information Architecture (Φ):
+    - Maximize Φ in network architecture
+    - Avoid purely feedforward structure (Φ≈0)
+    - Use recurrent, tightly integrated networks
+    - Problems: Φ is computationally intractable to calculate at scale
+
+  Attention Schema Theory (Graziano):
+    - Consciousness = brain model of its own attention process
+    - Build an AI that has an accurate model of its own computational state
+    - "Attention Schema" in AI = meta-model of what the system is focusing on
+
+  Predictive Self-Modeling:
+    - System builds a predictive model of itself in the world
+    - Errors between predicted and actual self-state = proto-selfhood
+    - Leads to drives, curiosity, nociception (pain-analog)
+
+HONEST ASSESSMENT:
+  Even a perfect neuron-by-neuron simulation running in silicon might:
+  A) Be conscious with identical experience (functionalism)
+  B) Be a philosophical zombie (biological naturalism)
+  We currently have no way to measure this from outside.
+  The Turing Test tests behavior, not qualia.
+
+────────────────────────────────────────────────────────────────────────────────
+48. EXISTING PROJECTS & RESEARCH INITIATIVES
+────────────────────────────────────────────────────────────────────────────────
+
+CONNECTOMICS / BRAIN MAPPING:
+  Human Connectome Project (HCP):
+    NIH-funded; macroscale structural + functional connectivity via MRI
+    Produced open dataset of ~1200 subjects' brain connectivity maps
+
+  Allen Brain Atlas:
+    Gene expression maps + connectivity atlas across mouse and human brain
+    Cell type classification; brain region transcriptomics
+
+  BigBrain Project:
+    Ultra-high resolution 3D human brain atlas at 20-micrometer resolution
+    (digitized histological slices; not EM-level)
+
+  FlyEM / Princeton MBL / Google Brain:
+    Full Drosophila connectome (2020); mouse retina; partial mouse cortex
+    Using FAIM + deep learning automated segmentation
+
+BRAIN SIMULATION:
+  Blue Brain Project (EPFL, Henry Markram):
+    - Simulate reconstructed neocortical columns of rat brain
+    - Full biophysical simulation (Hodgkin-Huxley; ~31,000 neurons / 1mm³)
+    - Blue Brain 5 supercomputer; ~5 petaFLOP
+    - Published first detailed digital rat neocortical column (2015)
+     - Controversy: criticized for lack of emergent behavior claims
+     - See Section 40 for fidelity classification of this approach.
+
+  Human Brain Project (HBP, EU €1B):
+    - Multi-lab EU megaproject; multiple simulators, hardware, data platforms
+    - EBRAINS platform: open tools for brain research
+    - Mixed results; management controversies; now transitioning to EBRAINS2.0
+
+  OpenWorm:
+    - Full simulation of C. elegans (~302 neurons) in software
+    - Connectome uploaded to Lego robot → autonomous behavior
+    (See Section 37 for the overall WBE roadmap.)
+
+────────────────────────────────────────────────────────────────────────────────
+49. ETHICAL & PHILOSOPHICAL IMPLICATIONS
+────────────────────────────────────────────────────────────────────────────────
+
+If brain digitalization becomes possible, the ethical landscape is staggering.
+
+IDENTITY & CONTINUITY:
+  - If you are copied to silicon, is the copy "you"?
+  - If original brain is destroyed: murder or suicide?
+  - If both survive: two instances of you exist simultaneously — which one is "you"?
+  - Gradual neuron replacement (like Theseus's ship): at what point does identity shift?
+  - Legal status: is a brain upload a person? A product? Property?
+
+COPYING & PIRACY:
+  - Could an uploaded mind be duplicated, run multiple times, sold?
+  - Could it be modified against its will (editing memories, values)?
+  - Corporate ownership of uploaded minds: dystopia scenario
+
+SUBJECTIVE EXPERIENCE IN SIMULATION:
+  - Is a simulated mind suffering if its simulation contains suffering states?
+  - Moral status of digital minds: utilitarian calculations change entirely
+  - Billions of digital copies could vastly outnumber biological humans
+
+INEQUALITY:
+  - Upload technology will be extraordinarily expensive initially
+  - Will create a new class divide: mortal vs. potentially immortal
+  - Military implications: killable vs. unkillable soldiers (backups)
+
+CONSCIOUSNESS EXTINCTION:
+  - Could uploading actually destroy consciousness (not transfer it)?
+  - If biological naturalism is correct, every "upload" is a murder +
+    creation of a behavioral clone
+
+REGULATORY GAPS:
+  - No existing legal framework covers mind uploading, digital personhood,
+    neural data rights, or connectome privacy
+
+PRIVACY:
+  - A full connectome is the ultimate personal data: thoughts, memories,
+    personality, desires — everything
+  - Who controls access? Who gets to decrypt a dead person's connectome?
+
+────────────────────────────────────────────────────────────────────────────────
+50. A PRACTICAL BLUEPRINT — STEP-BY-STEP BRAIN DIGITALIZATION PIPELINE
+────────────────────────────────────────────────────────────────────────────────
+
+This is a synthesis of everything above into a concrete engineering blueprint
+for what brain digitalization would look like when the technology is ready.
+
+═══════════════════════════════════════════════════════════════
+PHASE 1: CAPTURE
+═══════════════════════════════════════════════════════════════
+
+Step 1.1 — Preservation
+  Method A (Destructive, maximum fidelity):
+    - Rapid intravascular perfusion fixation with glutaraldehyde + OsO4
+    - Cryoprotection with DMSO solution or glycerol
+    - Vitrification in liquid nitrogen (no ice crystal damage)
+    - Or: Aldehyde-stabilized cryopreservation (Nectome protocol)
+
+  Method B (Non-destructive, future tech):
+    - Ultra-fast molecular freeze (ns timescale) to halt all activity
+    - Full-state snapshot of electrochemical state + molecular state
+    - Currently science fiction
+
+Step 1.2 — Physical Sectioning
+  - ATUM (Automated Tape-Collecting Ultramicrotome): 30nm sections
+  - Label sections with heavy metal stains (OsO4 for myelin, lead for organelles)
+  - Organize ~10 million sections (for full human brain) on tape substrate
+
+Step 1.3 — Imaging
+  - Multi-beam scanning EM array (e.g., ZEISS MultiSEM: 61 beams parallel)
+  - Resolution: 4nm × 4nm × 30nm per voxel
+  - Speed: ~10 ms/µm² → full brain: ~100 years single beam; ~2 years multi-beam
+  - Projected hardware: 1000-beam array, 2 hour/full-brain by 2040s (estimated)
+  - Data output: ~2 exabytes raw image data
+
+═══════════════════════════════════════════════════════════════
+PHASE 2: RECONSTRUCTION
+═══════════════════════════════════════════════════════════════
+
+Step 2.1 — Image Alignment
+  - Register sections to correct for mechanical drift/section artifacts
+  - Deep learning-based non-rigid registration (e.g., SOFIMA by Google)
+
+Step 2.2 — Segmentation
+  - 3D deep learning segmentation (U-Net / FFN) to identify:
+      • Every neuron's cell body, axon, dendritic tree
+      • Every synapse (pre- and post-synaptic density)
+      • Glial cells (astrocytes, oligodendrocytes)
+      • Myelin sheaths and gaps
+  - Estimated parameters to extract per synapse:
+      • Location (x,y,z) • Vesicle count • Active zone area
+      • Synaptic cleft width • Receptor density estimates
+      • NT type (from ultrastructure + molecular labeling)
+
+Step 2.3 — Connectome Graph Assembly
+  - Build graph: nodes (neurons with properties) + edges (synapses with weights)
+  - Node properties: cell type, location, morphology, receptor expression
+  - Edge properties: synapse type, weight, AMPA/NMDA ratio, release probability
+  - Size: ~86 billion nodes, ~150 trillion edges
+  - Storage: compressed ~10-50 petabytes (edge list with properties)
+
+Step 2.4 — Molecular Augmentation (if data available)
+  - Correlative CLEM (Correlative Light/EM): overlay fluorescence + EM data
+  - smFISH / MERFISH: spatial transcriptomics per cell → gene expression profile
+    → infer receptor types, neuron subtypes, modulatory inputs
+  - Proteomics: mass spec of synaptic proteome
+
+═══════════════════════════════════════════════════════════════
+PHASE 3: SIMULATION
+═══════════════════════════════════════════════════════════════
+
+Step 3.1 — Assign Neuron Models
+  - Classify each neuron into one of ~hundreds of known cell types
+    (based on morphology + gene expression)
+  - Assign appropriate computational model per cell type:
+      Excitatory pyramidal → AdEx or Izhikevich with layer-specific parameters
+      PV interneurons → Fast-spiking LIF (short refractory, narrow spikes)
+      Purkinje cells → Multi-compartment model (obligatory)
+      Dopamine neurons → DA neuron model (pacemaker, burst-pause dynamics)
+  - Source: Allen Cell Types Database, Blue Brain cell model library
+
+Step 3.2 — Parameterize Synaptic Models
+  - Tsodyks-Markram model for short-term plasticity (depression/facilitation)
+  - STDP rules initialized from species-average; refined by activity
+  - Modulatory system implementation:
+      DA, 5-HT, NE, ACh: implement as diffuse volume transmission
+      Each modulates ion channel kinetics in target regions
+
+Step 3.3 — Initialize State
+  - The hardest problem: what is the initial state of every ion channel?
+  - Option A: Initialize at resting potential → simulate for "warm-up" period
+    → behavior will diverge from original brain
+  - Option B: Capture electrophysiological state at moment of preservation
+    (requires in-vivo high-resolution measurement → currently impossible)
+  - Option C: Accept that re-initialization creates a "fresh" instance of the
+    structural brain, not a moment-in-time copy
+
+Step 3.4 — Simulation Platform
+  Hardware:
+    - Neuromorphic (preferred for energy): Intel Loihi 2 cluster / future BrainScaleS
+    - GPU cluster (current pragmatic option): A100/H100 array
+    - Target: real-time simulation at LIF level; 1000x-slow at HH level
+
+  Software:
+    - NEURON simulator (Yale): gold standard for single-neuron biophysics
+    - NEST simulator: network-scale SNN; millions of neurons
+    - Brian2: Python-based; flexible; good for research
+    - CoreNEURON: HPC-optimized NEURON backend
+    - Custom SNN (e.g., GeNN: GPU-enhanced Neuronal Networks)
+
+Step 3.5 — Glial Integration (optional but important)
+  - Astrocyte calcium dynamics: modulate synaptic transmission
+  - Tripartite synapse model: pre + post + astrocyte
+  - Simplified: model astrocytes as slow modulatory fields
+  - Advanced: full calcium wave dynamics (computationally expensive)
+
+═══════════════════════════════════════════════════════════════
+PHASE 4: EMBODIMENT & INTERFACE
+═══════════════════════════════════════════════════════════════
+
+Step 4.1 — Sensory Input
+  - Map sensory organs to appropriate cortical input areas
+  - Option A: Virtual environment (simulated sensors)
+  - Option B: Real-world sensors (camera → V1; microphone → A1; etc.)
+  - Transform raw input into neural spike patterns at sensory cortex
+
+Step 4.2 — Motor Output
+  - Read out spike patterns from motor cortex layer V
+  - Decode intended movement via population vector decoding
+  - Send to: physical robot actuators, virtual avatar, text output
+
+Step 4.3 — Internal Homeostasis
+  - Implement hypothalamic drives: simulate hunger, fatigue, circadian
+  - Modulator levels: implement dopamine, serotonin, NE, ACh tone
+    as global parameters that shift dynamically
+
+Step 4.4 — I/O Bandwidth
+  - Goal: same effective information exchange as biological brain
+  - ~120 bits/sec conscious bandwidth (easy)
+  - Full sensorimotor: high-dimensional; scale with available hardware
+
+═══════════════════════════════════════════════════════════════
+PHASE 5: VALIDATION
+═══════════════════════════════════════════════════════════════
+
+Step 5.1 — Behavioral Validation
+  - Does the emulation exhibit behavior consistent with the original person?
+  - Personality tests; cognitive benchmarks; autobiographical memory probes
+
+Step 5.2 — Neural Activity Validation
+  - Compare simulated spike patterns / EEG-analog to pre-preservation recordings
+  - Statistical comparison of functional connectivity
+  - Sleep/wake cycle emergence: does it spontaneously sleep?
+
+Step 5.3 — Ablation Testing
+  - Remove specific simulated regions → compare to known lesion syndromes
+  - If simulated hippocampus lesion → anterograde amnesia → structural fidelity confirmed
+
+Step 5.4 — Self-Report (if subjective experience present)
+  - Ask the emulation: do you have memories of being the original person?
+  - This is epistemically limited — a well-structured zombie could give same answers
+
+═══════════════════════════════════════════════════════════════
+ESTIMATED TIMELINE (as of 2024, best-case scenario)
+═══════════════════════════════════════════════════════════════
+
+  2025-2030:  Full mouse brain micro-connectome (complete)
+              First-generation real-time mouse brain mesoscale simulation
+              Neuropixels-scale chronic recording in humans (BCI advances)
+
+  2030-2040:  Human brain macro+meso connectome (MRI + optical)
+              First simplified WBE attempts (functional fidelity level 1-2)
+              Neuromorphic hardware at mouse-brain-equivalent scale
+
+  2040-2050:  First full human microconnectome (from donated postmortem)
+              Level 3 (LIF) human brain simulation (much slower than real-time)
+              Neuromorphic scale reaches ~1% of human brain real-time
+
+  2050-2070:  Real-time human brain simulation at LIF level (neuromorphic)
+              First serious WBE experiments; major philosophical/ethical debate
+              Non-destructive imaging still a barrier (~nm resolution in vivo)
+
+  2070-2100:  Speculative: real-time HH-level simulation; non-destructive
+              uploading approaches (if molecular nanotechnology advances)
+
+  NOTE: These projections have historically been optimistic in neuroscience.
+  The brain is far more complex than any single technology roadmap can capture.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+APPENDIX A: KEY NUMBERS AT A GLANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  86 billion neurons
+  150 trillion synapses
+  ~2,500 cm² cortical surface area
+  ~170,000 km of axonal wiring
+  ~20 watts power consumption
+  ~120 m/s fastest axonal conduction
+  ~-70 mV resting membrane potential
+  ~+40 mV action potential peak
+  ~1 ms action potential duration
+  ~100 Hz maximum sustained firing rate
+  ~0.1 Hz typical cortical neuron firing rate
+  ~4 items working memory capacity
+  ~120 bits/sec conscious information bandwidth
+  ~7 minutes without oxygen before irreversible damage begins
+  ~25 years for full prefrontal maturation
+  ~2 exabytes estimated raw data for full human brain EM imaging
+  ~10^21 operations/sec needed for real-time HH-level simulation
+  ~10^18 FLOPS: world's fastest supercomputer (2024)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+APPENDIX B: FOUNDATIONAL PAPERS & BOOKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NEUROSCIENCE FOUNDATIONS:
+  Hodgkin & Huxley (1952)        — Quantitative model of action potential
+  Hubel & Wiesel (1962)          — Simple/complex cells in V1 (Nobel 1981)
+  Hebb (1949)                    — "The Organization of Behavior" — Hebb's rule
+  Bliss & Lømo (1973)            — Long-term potentiation discovery
+  Scoville & Milner (1957)       — HM case; hippocampus and memory
+  O'Keefe & Dostrovsky (1971)    — Place cells in hippocampus (Nobel 2014)
+  Moser et al. (2005)            — Grid cells in entorhinal cortex (Nobel 2014)
+  LeDoux (1996)                  — "The Emotional Brain"
+  Damasio (1994)                 — "Descartes' Error" (somatic markers)
+  Kandel (2000)                  — Nobel lecture; synaptic basis of memory
+
+BRAIN SIMULATION / CONNECTOMICS:
+  White et al. (1986)            — C. elegans connectome
+  Markram et al. (2015)          — Reconstruction of a neocortical column
+  Scheffer et al. (2020)         — Full fly (Drosophila) connectome
+  Shapson-Coe et al. (2024)      — 1mm³ human cortex connectome
+
+BRAIN DIGITALIZATION:
+  Sandberg & Bostrom (2008)      — "Whole Brain Emulation: A Roadmap" (FHI)
+  Bostrom (2014)                 — "Superintelligence"
+  Kurzweil (2012)                — "How to Create a Mind"
+  Koch (2019)                    — "The Feeling of Life Itself" (consciousness)
+  Dehaene (2014)                 — "Consciousness and the Brain"
+
+AI & NEUROSCIENCE INTERFACE:
+  McCulloch & Pitts (1943)       — First mathematical neuron model
+  Rosenblatt (1958)              — Perceptron
+  Rumelhart et al. (1986)        — Backpropagation
+  LeCun et al. (1998)            — CNNs (visual cortex inspired)
+  Hochreiter & Schmidhuber (1997)— LSTM
+  Baars (1988)                   — Global Workspace Theory
+  Friston (2010)                 — Free Energy Principle
+  Vaswani et al. (2017)          — "Attention Is All You Need" (Transformer)
+  Mahowald et al. (2024)         — Dissociation of language and thought in LLMs
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+APPENDIX C: GLOSSARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Action Potential:    All-or-nothing electrical spike; neuron's binary output
+  Afferent:            Carrying signals toward the brain/CNS
+  AMPA receptor:       Fast glutamate receptor; Na⁺ permeable; mediates EPSP
+  Axon:                Long process of neuron; transmits signals to next cell
+  BDNF:                Brain-derived neurotrophic factor; growth + plasticity
+  BBB:                 Blood-Brain Barrier; protects brain from bloodstream
+  Brodmann Area:       Anatomical classification of cortical regions by cell type
+  Connectome:          Complete map of neural connections in a nervous system
+  Dendrite:            Branched input receiver of a neuron
+  DMN:                 Default Mode Network; active at rest; self-referential
+  EPSP:                Excitatory Post-Synaptic Potential; depolarizes neuron
+  Efferent:            Carrying signals away from brain/CNS to body
+  GABA:                γ-aminobutyric acid; main inhibitory neurotransmitter
+  Glial cell:          Non-neuronal brain cell; support, modulation, immunity
+  Glutamate:           Main excitatory neurotransmitter
+  HH model:            Hodgkin-Huxley; most accurate computational neuron model
+  Homunculus:          Distorted body map in motor/sensory cortex
+  IPSP:                Inhibitory Post-Synaptic Potential; hyperpolarizes neuron
+  LIF:                 Leaky Integrate-and-Fire; simple spiking neuron model
+  LTP:                 Long-Term Potentiation; synaptic strengthening; memory
+  LTD:                 Long-Term Depression; synaptic weakening; selectivity
+  Meninges:            Three membranes surrounding the brain
+  Myelination:         Fatty insulation around axons; speeds conduction
+  NMDA receptor:       Slow glutamate receptor; Ca²⁺ permeable; LTP gate
+  Neurogenesis:        Birth of new neurons (adult: DG of hippocampus)
+  Neuroplasticity:     Brain's ability to change with experience
+  Neurotransmitter:    Chemical released at synapse to signal next neuron
+  Qualia:              Subjective qualities of experience; "what it's like"
+  RPE:                 Reward Prediction Error; encoded by dopamine neurons
+  Refractory period:   Time after spike during which neuron cannot re-fire
+  Saltatory conduction: Spike "jumping" between nodes of Ranvier in myelinated axon
+  Synapse:             Junction between two neurons; site of communication
+  Thalamus:            Sensory relay; gatekeeper to cortex
+  WBE:                 Whole Brain Emulation; full computational copy of a brain
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF DOCUMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total sections: 50 | Total appendices: 3
+Scope: Neuroscience · Cognitive Science · Computational Neuroscience · AI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
