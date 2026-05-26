@@ -1,4 +1,4 @@
-# Rebirth AI (THIS IS THE PROJECT THE WEIGHTS ARE NOT INCLUDED!)
+# Rebirth AI (THIS IS THE PROJECT ARCHITECTURE THE WEIGHTS ARE NOT INCLUDED!)
 
 A biologically-plausible artificial brain built in pure Python/NumPy.
 
