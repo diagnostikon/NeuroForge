@@ -172,13 +172,19 @@ class BiologicalColumn:
       - Dale's Law: each output neuron has a fixed sign (excitatory or
         inhibitory). Weights are projected after each update.
       - Homeostatic excitability (set via BiologicalLayer).
+      - Axonal delays: each layer has configurable delay lines.
+      - Active dendrites: NMDA spikes (coincidence detection),
+        calcium spikes (broad depolarization).
+      - STDP eligibility traces: pre/post spike timing for learning.
+      - Molecular signaling: CaMKII autophosphorylation, PKA cascade, CREB.
 
     L6 generates untrained feedback to lower areas.
     """
     def __init__(self, column_input_size, hidden_size, output_size,
                  learning_rate=0.01, context_decay=0.9, context_buffer=0,
                  use_softmax=True, lateral_size=0, td_size=0,
-                 l23_activation='tanh', predictive_coding=True):
+                 l23_activation='tanh', predictive_coding=True,
+                 axonal_delay=0, dendrite_calcium=True, use_stdp=False):
         self.hidden_size = hidden_size
         self.output_size = output_size
         self.learning_rate = learning_rate
@@ -188,6 +194,56 @@ class BiologicalColumn:
         self.column_input_size = column_input_size
         self.l23_activation = l23_activation
         self.predictive_coding = predictive_coding
+        self.axonal_delay = axonal_delay
+        self.dendrite_calcium = dendrite_calcium
+        self.use_stdp = use_stdp
+
+        # --- Axonal delay lines ---
+        # Each layer's output is delayed by `axonal_delay` timesteps
+        if axonal_delay > 0:
+            self._delay_L4 = np.zeros((axonal_delay, hidden_size))
+            self._delay_L23 = np.zeros((axonal_delay, hidden_size))
+            self._delay_L5 = np.zeros((axonal_delay, ctx_dim))
+            self._delay_idx = 0
+        else:
+            self._delay_L4 = None
+            self._delay_L23 = None
+            self._delay_L5 = None
+
+        # --- Active dendrites: NMDA / calcium dynamics ---
+        # NMDA conductance: g_nmda = sigmoid(h4) * (1 + depol_factor)
+        self.nmda_gate = 0.0
+        self.calcium_level = 0.0           # slow calcium pool
+        self.calcium_threshold = 0.3       # triggers calcium spike
+        self.calcium_decay = 0.95          # per-step decay
+        self.calcium_spike = 0.0
+
+        # --- STDP eligibility traces ---
+        # Pre-synaptic spike trace (exponential decay)
+        self._stdp_trace_pre = np.zeros(hidden_size)
+        # Post-synaptic spike trace
+        self._stdp_trace_post = np.zeros(output_size)
+        self.stdp_tau_pre = 20.0            # time constant for pre trace
+        self.stdp_tau_post = 20.0           # time constant for post trace
+        self.stdp_A_plus = 0.01             # LTP amplitude
+        self.stdp_A_minus = 0.012           # LTD amplitude
+
+        # --- Molecular signaling ---
+        # CaMKII: autophosphorylation (persistent activity, memory)
+        self.camkii = np.ones(hidden_size) * 0.1
+        self.camkii_autophos = 0.0          # global autophosphorylation level
+        self.camkii_decay = 0.999
+        self.camkii_activation_rate = 0.01
+        # PKA: G-protein cascade (modulated by neuromodulators)
+        self.pka = 0.3
+        self.pka_decay = 0.99
+        self.pka_activation = 0.02
+        # CREB: transcription factor (long-term memory gene expression)
+        self.creb = 0.0
+        self.creb_decay = 0.998
+        self.creb_activation_rate = 0.005
+        # Dopamine-modulated consolidation tag
+        self._consolidation_tag = 0.0
 
         self.context_buffer = context_buffer
         self.context_decay = context_decay
@@ -259,14 +315,18 @@ class BiologicalColumn:
         self._l4_in = None
         self._error_pc = None
         self._h4 = None
+        self._h4_raw = None           # before NMDA modulation
         self._combined_23 = None
         self._h23 = None
+        self._h23_nmda = None        # after NMDA spike modulation
+        self._calcium_event = False  # calcium spike this step
         self._ctx_in = None
         self.output = None
         self.feedback = None
         self._d_thal = None
         self._d_td = None
         self._d_lat = None
+        self._stdp_eligible = False   # was STDP active this update?
 
     def _apply_dale(self):
         """Project weights to enforce Dale's law: each neuron has one sign."""
@@ -280,13 +340,11 @@ class BiologicalColumn:
 
     def forward(self, thalamic_input, lateral_input=None, td_input=None):
         if self.predictive_coding:
-            # --- Predictive Coding: L4 processes residual error ---
             error = (thalamic_input - td_input) if td_input is not None else thalamic_input
             self._error_pc = error
             self._l4_in = error
             h4 = np.dot(error, self.W4) + self.b4
         else:
-            # --- Standard mode: concatenate thalamic + td ---
             parts = [thalamic_input]
             if td_input is not None:
                 parts.append(td_input)
@@ -297,10 +355,32 @@ class BiologicalColumn:
             self._error_pc = None
             h4 = np.dot(l4_in, self.W4) + self.b4
         np.clip(h4, -20, 20, out=h4)
-        self._h4 = h4
+        self._h4_raw = h4
+
+        # --- Active dendrites: NMDA spike modulation ---
+        # NMDA receptors require both presynaptic input AND postsynaptic depolarization.
+        # g_nmda = sigmoid(h4) * (1 + depol), where depol comes from backpropagating
+        # action potentials (approximated by L23 activity from previous step).
+        if self.dendrite_calcium:
+            depol = np.tanh(self.calcium_spike * 2.0)  # backpropagating AP influence
+            nmda_g = 1.0 / (1.0 + np.exp(-h4)) * (1.0 + depol)
+            self.nmda_gate = np.mean(nmda_g)
+            h4 = h4 * (1.0 + 0.3 * nmda_g)  # NMDA boost
+        else:
+            self.nmda_gate = 0.0
+        np.clip(h4, -20, 20, out=h4)
+
+        # --- Axonal delay: L4 → L23 ---
+        if self.axonal_delay > 0:
+            self._delay_L4[self._delay_idx % self.axonal_delay] = h4
+            idx = (self._delay_idx - self.axonal_delay + 1) % self.axonal_delay
+            h4_delayed = self._delay_L4[idx]
+        else:
+            h4_delayed = h4
+        self._h4 = h4_delayed
 
         # L23: integrate L4 + lateral
-        parts23 = [h4]
+        parts23 = [h4_delayed]
         if lateral_input is not None:
             parts23.append(lateral_input)
         elif self.lateral_size > 0:
@@ -314,13 +394,44 @@ class BiologicalColumn:
         else:
             h23 = np.tanh(l23_z)
         np.clip(h23, -20, 20, out=h23)
+        self._h23_nmda = h23
+
+        # --- Calcium spike detection ---
+        if self.dendrite_calcium:
+            nmda_activity = np.mean(nmda_g) if self.dendrite_calcium else 0.0
+            self.calcium_level = self.calcium_decay * self.calcium_level + \
+                (1 - self.calcium_decay) * nmda_activity
+            if self.calcium_level > self.calcium_threshold:
+                self.calcium_spike = min(1.0, self.calcium_spike + 0.2)
+                self._calcium_event = True
+            else:
+                self.calcium_spike *= 0.9
+                self._calcium_event = False
+
+        # --- Axonal delay: L23 → L5 ---
+        if self.axonal_delay > 0:
+            self._delay_L23[self._delay_idx % self.axonal_delay] = h23
+            idx = (self._delay_idx - self.axonal_delay + 1) % self.axonal_delay
+            h23 = self._delay_L23[idx]
+            self._delay_idx = (self._delay_idx + 1) % max(self.axonal_delay, 1)
         self._h23 = h23
-        self._l23_z = l23_z
+
+        # --- STDP eligibility traces ---
+        # Pre-synaptic: every active L4 neuron leaves a trace
+        pre_act = np.abs(self._h4) > 0.1
+        self._stdp_trace_pre *= (1.0 - 1.0 / self.stdp_tau_pre)
+        self._stdp_trace_pre[pre_act] += 0.1
 
         # L5: output with context
         h23_proj = np.dot(h23, self.W_ctx_proj)
         ctx_in = np.concatenate([h23_proj, self.context])
         self._ctx_in = ctx_in
+
+        # --- Axonal delay: L5 → output ---
+        if self.axonal_delay > 0:
+            self._delay_L5[self._delay_idx % self.axonal_delay] = ctx_in
+            ctx_in = self._delay_L5[idx]
+
         logits = np.dot(ctx_in, self.W5) + self.b5
         if self.use_softmax:
             exp = np.exp(logits - np.max(logits))
@@ -329,6 +440,11 @@ class BiologicalColumn:
         else:
             self.logits_lin = np.clip(logits, -10, 10)
             self.output = 1.0 / (1.0 + np.exp(-self.logits_lin))
+
+        # --- Post-synaptic STDP trace ---
+        post_act = np.abs(self.output) > 0.1
+        self._stdp_trace_post *= (1.0 - 1.0 / self.stdp_tau_post)
+        self._stdp_trace_post[post_act] += 0.1
 
         if self.context_buffer > 0:
             self.context = np.roll(self.context, self.hidden_size)
@@ -340,7 +456,7 @@ class BiologicalColumn:
         self.feedback = np.tanh(np.dot(h23, self.W6) + self.b6)
         return self.output
 
-    def update(self, target):
+    def update(self, target, dopamine=0.0):
         if self.use_softmax:
             err = self.output - target
             loss = -np.sum(target * np.log(np.clip(self.output, 1e-12, 1.0)))
@@ -350,7 +466,45 @@ class BiologicalColumn:
             sigmoid_deriv = self.output * (1 - self.output) + 1e-8
             err = err * sigmoid_deriv
 
+        # --- Molecular signaling updates ---
+        # CaMKII: activated by calcium, autophosphorylates for persistence
+        ca_act = np.abs(self.calcium_level) + self.calcium_spike
+        self.camkii = self.camkii * self.camkii_decay + \
+            self.camkii_activation_rate * ca_act * (1 - self.camkii)
+        self.camkii = np.clip(self.camkii, 0.0, 1.0)
+        self.camkii_autophos = 0.99 * self.camkii_autophos + 0.01 * np.mean(self.camkii)
+
+        # PKA: modulated by dopamine (reward signal)
+        da_mod = np.clip(dopamine, 0.0, 1.0)
+        self.pka = self.pka * self.pka_decay + self.pka_activation * da_mod
+        self.pka = np.clip(self.pka, 0.0, 1.0)
+
+        # CREB: activated by CaMKII (long-term memory)
+        self.creb = self.creb * self.creb_decay + \
+            self.creb_activation_rate * self.camkii_autophos
+        self.creb = np.clip(self.creb, 0.0, 1.0)
+
+        # Consolidation tag: memories tagged for long-term storage
+        self._consolidation_tag = 0.9 * self._consolidation_tag + \
+            0.1 * (self.camkii_autophos * self.creb)
+
+        # --- STDP: spike-timing dependent plasticity ---
+        if self.use_stdp:
+            for i in range(len(self._stdp_trace_pre)):
+                for j in range(len(self._stdp_trace_post)):
+                    delta_t = self._stdp_trace_pre[i] - self._stdp_trace_post[j]
+                    if delta_t > 0:
+                        dw = self.stdp_A_plus * np.exp(-abs(delta_t) / self.stdp_tau_pre)
+                        self.W5[i % self.hidden_size, j % self.W5.shape[1]] += dw
+                    elif delta_t < 0:
+                        dw = -self.stdp_A_minus * np.exp(-abs(delta_t) / self.stdp_tau_post)
+                        self.W5[abs(i) % self.hidden_size, j % self.W5.shape[1]] += dw
+            self._stdp_eligible = True
+        else:
+            self._stdp_eligible = False
+
         # --- Feedback Alignment: use fixed B5 instead of W5.T ---
+        lr_mod = 1.0 + 0.5 * self.pka + 0.5 * self.camkii_autophos
         dh23_raw = np.dot(err, self._B5[:self.hidden_size].T)
         dW_ctx_proj = np.outer(self._h23, dh23_raw)
         dh23_raw = np.dot(dh23_raw, self._B_ctx.T)
@@ -379,8 +533,6 @@ class BiologicalColumn:
 
         # Gradient w.r.t. L4 input components (thal vs td)
         if self.predictive_coding:
-            # error = thal_input - td_input
-            # d(error)/d(thal) = +1, d(error)/d(td) = -1
             self._d_thal = d_l4_in
             self._d_td = -d_l4_in
         elif self.td_size > 0:
@@ -399,20 +551,20 @@ class BiologicalColumn:
         )
         clip_scale = min(1.0, 5.0 / max(grad_norm, 1e-12))
 
-        # Apply updates with momentum
-        self._v_W5 = self.mom * self._v_W5 - self.lr5 * dW5 * clip_scale
+        # Apply updates with momentum and molecular modulation
+        self._v_W5 = self.mom * self._v_W5 - self.lr5 * lr_mod * dW5 * clip_scale
         self.W5 += self._v_W5
-        self._v_b5 = self.mom * self._v_b5 - self.lr5 * db5 * clip_scale
+        self._v_b5 = self.mom * self._v_b5 - self.lr5 * lr_mod * db5 * clip_scale
         self.b5 += self._v_b5
-        self._v_W_ctx = self.mom * self._v_W_ctx - self.lr5 * 0.1 * dW_ctx_proj * clip_scale
+        self._v_W_ctx = self.mom * self._v_W_ctx - self.lr5 * 0.1 * lr_mod * dW_ctx_proj * clip_scale
         self.W_ctx_proj += self._v_W_ctx
-        self._v_W23 = self.mom * self._v_W23 - self.lr23 * dW23 * clip_scale
+        self._v_W23 = self.mom * self._v_W23 - self.lr23 * lr_mod * dW23 * clip_scale
         self.W23 += self._v_W23
-        self._v_b23 = self.mom * self._v_b23 - self.lr23 * db23 * clip_scale
+        self._v_b23 = self.mom * self._v_b23 - self.lr23 * lr_mod * db23 * clip_scale
         self.b23 += self._v_b23
-        self._v_W4 = self.mom * self._v_W4 - self.lr4 * dW4 * clip_scale
+        self._v_W4 = self.mom * self._v_W4 - self.lr4 * lr_mod * dW4 * clip_scale
         self.W4 += self._v_W4
-        self._v_b4 = self.mom * self._v_b4 - self.lr4 * db4 * clip_scale
+        self._v_b4 = self.mom * self._v_b4 - self.lr4 * lr_mod * db4 * clip_scale
         self.b4 += self._v_b4
 
         # Weight clipping to prevent runaway growth
@@ -440,7 +592,8 @@ class BiologicalLayer:
     def __init__(self, column_input_size, hidden_size, output_size,
                  num_columns=5, learning_rate=0.01, context_decay=0.9,
                  context_buffer=0, use_softmax=True, lateral_k=0, td_size=0,
-                 l23_activation='tanh', learn_lateral=True):
+                 l23_activation='tanh', learn_lateral=True,
+                 axonal_delay=0, dendrite_calcium=True, use_stdp=False):
         self.num_columns = num_columns
         self.column_input_size = column_input_size
         self.hidden_size = hidden_size
@@ -472,7 +625,10 @@ class BiologicalLayer:
                              learning_rate, context_decay, context_buffer,
                              use_softmax, lateral_size=lat_size, td_size=td_size,
                              l23_activation=l23_activation,
-                             predictive_coding=True)
+                             predictive_coding=True,
+                             axonal_delay=axonal_delay,
+                             dendrite_calcium=dendrite_calcium,
+                             use_stdp=use_stdp)
             for _ in range(num_columns)
         ]
 
@@ -540,7 +696,7 @@ class BiologicalLayer:
 
         return col_outs.ravel(), mask
 
-    def update(self, target):
+    def update(self, target, dopamine=0.0):
         if self._active_mask is None:
             self._active_mask = np.ones(self.num_columns, dtype=bool)
         active_count = max(np.sum(self._active_mask), 1)
@@ -555,7 +711,7 @@ class BiologicalLayer:
         loss = 0.0
         d_laterals = []
         for i, col in enumerate(self.columns):
-            loss += col.update(col_targets[i])
+            loss += col.update(col_targets[i], dopamine=dopamine)
             if col._d_lat is not None and self._active_mask[i]:
                 d_laterals.append(col._d_lat)
 
@@ -585,7 +741,8 @@ class CorticalArea:
     def __init__(self, input_size, hidden_size, output_size,
                  num_columns=5, learning_rate=0.01, context_decay=0.9,
                  context_buffer=0, use_softmax=True, lateral_k=0, td_size=0,
-                 l23_activation='tanh', learn_lateral=False):
+                 l23_activation='tanh', learn_lateral=False,
+                 axonal_delay=0, dendrite_calcium=True, use_stdp=False):
         self.num_columns = num_columns
         self.hidden_size = hidden_size
         self.learning_rate = learning_rate
@@ -593,11 +750,14 @@ class CorticalArea:
         self.thalamus = Thalamus(input_size, num_columns, output_size,
                                   learning_rate=learning_rate * 0.1)
         self.layer = BiologicalLayer(output_size, hidden_size, output_size,
-                                      num_columns, learning_rate, context_decay,
-                                      context_buffer, use_softmax, lateral_k,
-                                      td_size=td_size,
-                                      l23_activation=l23_activation,
-                                      learn_lateral=learn_lateral)
+                                       num_columns, learning_rate, context_decay,
+                                       context_buffer, use_softmax, lateral_k,
+                                       td_size=td_size,
+                                       l23_activation=l23_activation,
+                                       learn_lateral=learn_lateral,
+                                       axonal_delay=axonal_delay,
+                                       dendrite_calcium=dendrite_calcium,
+                                       use_stdp=use_stdp)
 
     def forward(self, x, td_inputs=None, thal_mod=None):
         """Forward pass through thalamus → biological layer.
@@ -620,8 +780,8 @@ class CorticalArea:
         col_inputs = thal_out.reshape(self.num_columns, -1)
         return self.layer.forward(col_inputs, td_inputs)
 
-    def update(self, target):
-        return self.layer.update(target)
+    def update(self, target, dopamine=0.0):
+        return self.layer.update(target, dopamine=dopamine)
 
     def reset_context(self):
         self.layer.reset_context()
