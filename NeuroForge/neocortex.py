@@ -129,7 +129,8 @@ class BidirectionalCortex:
     def __init__(self, input_size, hidden_size, output_size,
                  num_columns=5, learning_rate=0.5, context_buffer=3,
                  lateral_k=3, l23_activation='tanh',
-                 predictive_coding=True):
+                 predictive_coding=True,
+                 axonal_delay=0, dendrite_calcium=True, use_stdp=False):
         self.num_columns = num_columns
         self.output_size = output_size
         self.hidden_size = hidden_size
@@ -142,18 +143,24 @@ class BidirectionalCortex:
         td_dim = output_size if predictive_coding else hidden_size
 
         self.area1 = CorticalArea(input_size, hidden_size, output_size,
-                                   num_columns, lr1,
-                                   context_buffer=context_buffer,
-                                   use_softmax=True, lateral_k=lateral_k,
-                                   td_size=td_dim,
-                                   l23_activation=l23_activation,
-                                   learn_lateral=True)
+                                    num_columns, lr1,
+                                    context_buffer=context_buffer,
+                                    use_softmax=True, lateral_k=lateral_k,
+                                    td_size=td_dim,
+                                    l23_activation=l23_activation,
+                                    learn_lateral=True,
+                                    axonal_delay=axonal_delay,
+                                    dendrite_calcium=dendrite_calcium,
+                                    use_stdp=use_stdp)
         self.area2 = CorticalArea(self.h1_dim, hidden_size, output_size,
-                                   num_columns, lr2,
-                                   context_buffer=context_buffer,
-                                   use_softmax=False, lateral_k=lateral_k,
-                                   l23_activation=l23_activation,
-                                   learn_lateral=True)
+                                    num_columns, lr2,
+                                    context_buffer=context_buffer,
+                                    use_softmax=False, lateral_k=lateral_k,
+                                    l23_activation=l23_activation,
+                                    learn_lateral=True,
+                                    axonal_delay=axonal_delay,
+                                    dendrite_calcium=dendrite_calcium,
+                                    use_stdp=use_stdp)
 
         self.fb_w = np.random.randn(hidden_size, td_dim) * np.sqrt(2.0 / hidden_size)
         self.fb_b = np.zeros(td_dim)
@@ -184,8 +191,8 @@ class BidirectionalCortex:
     def reset_td_errors(self):
         self._td_errors = []
 
-    def update(self, x_next):
-        loss1 = self.area1.update(x_next)
+    def update(self, x_next, dopamine=0.0):
+        loss1 = self.area1.update(x_next, dopamine=dopamine)
 
         thal_grads = [c._d_thal for c in self.area1.columns
                       if c._d_thal is not None]
